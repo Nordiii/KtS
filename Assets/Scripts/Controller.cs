@@ -7,7 +7,7 @@ public class Controller : MonoBehaviour {
 
 	private CharacterController myController;
 
-	Vector3 movementZ;
+	Vector3 movementy;
 	Vector3 movementx;
 	Vector3 movement;
 
@@ -25,9 +25,9 @@ public class Controller : MonoBehaviour {
 
 	void Move()
 	{
-		movementZ = Input.GetAxis ("Vertical") * Vector3.forward * moveSpeed * Time.deltaTime;
+		movementy = Input.GetAxis ("Vertical") * Vector3.back * moveSpeed * Time.deltaTime;
 		movementx = Input.GetAxis ("Horizontal") * Vector3.right * moveSpeed * Time.deltaTime;
-		movement = transform.TransformDirection (movementZ + movementx);
+		movement = transform.TransformDirection (movementy + movementx);
 		movement.y -= gravtiy * Time.deltaTime;
 
 		myController.Move (movement);
