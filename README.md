@@ -1,2 +1,1 @@
-#KtS
-Game Dev 2016 HBRS
+#KtS - Game Dev 2016 HBRS
