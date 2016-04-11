@@ -15,7 +15,7 @@ public class Controller : MonoBehaviour {
 	void Start () {
 		myController = gameObject.GetComponent<CharacterController>();
 	}
-	
+
 	// Update is called once per frame
 	void Update () {
 		Move ();
@@ -25,7 +25,7 @@ public class Controller : MonoBehaviour {
 
 	void Move()
 	{
-		movementy = Input.GetAxis ("Vertical") * Vector3.back * moveSpeed * Time.deltaTime;
+		movementy = Input.GetAxis ("Vertical") * Vector3.up * moveSpeed * Time.deltaTime;
 		movementx = Input.GetAxis ("Horizontal") * Vector3.right * moveSpeed * Time.deltaTime;
 		movement = transform.TransformDirection (movementy + movementx);
 		movement.y -= gravtiy * Time.deltaTime;
