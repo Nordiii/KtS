@@ -2,34 +2,22 @@
 using System.Collections;
 
 public class Controller : MonoBehaviour {
-	public float moveSpeed = 3.0f; //speed player moves
-	public float gravtiy = 9.81f;
+	public float moveSpeed = 0f;
+	private float movex = 0f;
+	private float movey = 0f;
 
-	private CharacterController myController;
-
-	Vector3 movementy;
-	Vector3 movementx;
-	Vector3 movement;
+	Rigidbody2D rigidbody2D;
 
 	// Use this for initialization
 	void Start () {
-		myController = gameObject.GetComponent<CharacterController>();
+		rigidbody2D = GetComponent<Rigidbody2D> ();
 	}
 
 	// Update is called once per frame
-	void Update () {
-		Move ();
-	}
-
-
-
-	void Move()
-	{
-		movementy = Input.GetAxis ("Vertical") * Vector3.up * moveSpeed * Time.deltaTime;
-		movementx = Input.GetAxis ("Horizontal") * Vector3.right * moveSpeed * Time.deltaTime;
-		movement = transform.TransformDirection (movementy + movementx);
-		movement.y -= gravtiy * Time.deltaTime;
-
-		myController.Move (movement);
+	void FixedUpdate () {
+		movex = Input.GetAxis ("Horizontal");
+		movey = Input.GetAxis ("Vertical");
+		rigidbody2D.velocity = new Vector2 (movex * moveSpeed, movey * moveSpeed);
 	}
 }
+

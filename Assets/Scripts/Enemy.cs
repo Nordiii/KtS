@@ -2,8 +2,9 @@
 using System.Collections;
 
 public class Enemy : MonoBehaviour {
-	public float moveSpeed = 15.0f;
+	public float moveSpeed = 7.0f;
 	public Transform target;
+	public float minDistance = 1f;
 
 	// Use this for initialization
 	void Start () {
@@ -21,6 +22,9 @@ public class Enemy : MonoBehaviour {
 		}
 
 		transform.LookAt (target);
-		transform.position += transform.forward * moveSpeed * Time.deltaTime;
+		if (Vector3.Distance (transform.position, target.position) >= minDistance) {
+			transform.position += transform.forward * moveSpeed * Time.deltaTime;
+		}
+
 	}
 }
