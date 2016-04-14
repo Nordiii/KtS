@@ -1,14 +1,13 @@
 fileFormatVersion: 2
-guid: eb04cd8b7c0ac6149932f8646ee193ab
-timeCreated: 1460383432
+guid: 6e5e8199368bb7247bf8e80b59a66741
+timeCreated: 1460651409
 licenseType: Free
 TextureImporter:
-  fileIDToRecycleName:
-    21300000: CheapBulletSprite_0
+  fileIDToRecycleName: {}
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
-    enableMipMap: 0
+    enableMipMap: 1
     linearTexture: 0
     correctGamma: 0
     fadeOut: 0
@@ -27,10 +26,10 @@ TextureImporter:
   cubemapConvolutionSteps: 7
   cubemapConvolutionExponent: 1.5
   seamlessCubemap: 0
-  textureFormat: -3
+  textureFormat: -1
   maxTextureSize: 2048
   textureSettings:
-    filterMode: 0
+    filterMode: 2
     aniso: 16
     mipBias: -1
     wrapMode: 1
@@ -39,29 +38,18 @@ TextureImporter:
   rGBM: 0
   compressionQuality: 50
   allowsAlphaSplitting: 0
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
-  alignment: 0
-  spritePivot: {x: 0.5, y: 0.5}
-  spriteBorder: {x: 20, y: 13, z: 3, w: 9}
-  spritePixelsToUnits: 128
+  alignment: 9
+  spritePivot: {x: 0.5000001, y: 0.6081613}
+  spriteBorder: {x: 14, y: 16, z: 14, w: 9}
+  spritePixelsToUnits: 100
   alphaIsTransparency: 1
   textureType: 8
   buildTargetSettings: []
   spriteSheet:
-    sprites:
-    - name: CheapBulletSprite_0
-      rect:
-        serializedVersion: 2
-        x: 20
-        y: 13
-        width: 9
-        height: 10
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
+    sprites: []
     outline: []
   spritePackingTag: 
   userData: 
