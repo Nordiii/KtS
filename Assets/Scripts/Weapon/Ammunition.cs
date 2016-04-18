@@ -37,9 +37,12 @@ public class Ammunition : MonoBehaviour {
 
     void OnCollisionEnter2D(Collision2D collision)
     {
-        collision.gameObject.SendMessage("hitRecived", ammunition_Damage);
-        //Fügt die geschwindigkeit hinzu bevor das gameObject zerstört wird (knockback)
-        collision.rigidbody.AddForce(collision.relativeVelocity);
+        if(collision.collider.gameObject.CompareTag("Enemy"))
+        {
+            collision.gameObject.SendMessage("hitRecived", ammunition_Damage);
+            //Fügt die geschwindigkeit hinzu bevor das gameObject zerstört wird (knockback)
+            collision.rigidbody.AddForce(collision.relativeVelocity);
+        }
         Destroy(gameObject);
     }
 
