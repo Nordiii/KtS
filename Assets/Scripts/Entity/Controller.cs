@@ -14,7 +14,8 @@ public class Controller : MonoBehaviour {
 	Vector3 mouse;
 	Vector3 position;
 
-	bool up = false, down = false, left = false, right = false, idle = false;
+	bool up = false, down = false, left = false, right = false;
+	bool idle = false;
 
 	// Use this for initialization
 	void Start () {
