@@ -1,9 +1,22 @@
 fileFormatVersion: 2
 guid: 7f5a983acdd4c7d46bad0d64734c5649
-timeCreated: 1461167307
+timeCreated: 1461336030
 licenseType: Free
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: tor_0
+    21300002: tor_1
+    21300004: tor_2
+    21300006: tor_3
+    21300008: tor_4
+    21300010: tor_5
+    21300012: tor_6
+    21300014: tor_7
+    21300016: tor_8
+    21300018: tor_9
+    21300020: tor_10
+    21300022: tor_11
+    21300024: tor_12
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -26,30 +39,278 @@ TextureImporter:
   cubemapConvolutionSteps: 7
   cubemapConvolutionExponent: 1.5
   seamlessCubemap: 0
-  textureFormat: -1
+  textureFormat: -3
   maxTextureSize: 2048
   textureSettings:
-    filterMode: -1
-    aniso: -1
+    filterMode: 0
+    aniso: 16
     mipBias: -1
-    wrapMode: -1
-  nPOTScale: 1
+    wrapMode: 1
+  nPOTScale: 0
   lightmap: 0
   rGBM: 0
   compressionQuality: 50
   allowsAlphaSplitting: 0
-  spriteMode: 0
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
-  spritePixelsToUnits: 100
-  alphaIsTransparency: 0
-  textureType: -1
+  spritePixelsToUnits: 10
+  alphaIsTransparency: 1
+  textureType: 8
   buildTargetSettings: []
   spriteSheet:
-    sprites: []
+    sprites:
+    - name: tor_0
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 15
+        width: 102
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 30, y: 50}
+        - {x: -26, y: 50}
+        - {x: -51, y: 42}
+        - {x: -51, y: -50}
+        - {x: 51, y: -50}
+        - {x: 51, y: 12}
+        - {x: 44, y: 28}
+    - name: tor_1
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 15
+        width: 102
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -25, y: 50}
+        - {x: -51, y: 25}
+        - {x: -51, y: -50}
+        - {x: 51, y: -50}
+        - {x: 51, y: 21}
+        - {x: 50, y: 33}
+        - {x: 23, y: 50}
+    - name: tor_2
+      rect:
+        serializedVersion: 2
+        x: 269
+        y: 15
+        width: 102
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -22, y: 50}
+        - {x: -28, y: 48}
+        - {x: -43, y: 28}
+        - {x: -51, y: 12}
+        - {x: -51, y: -50}
+        - {x: 51, y: -50}
+        - {x: 51, y: 21}
+        - {x: 29, y: 50}
+    - name: tor_3
+      rect:
+        serializedVersion: 2
+        x: 397
+        y: 15
+        width: 102
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -24, y: 50}
+        - {x: -51, y: 38}
+        - {x: -51, y: -50}
+        - {x: 51, y: -50}
+        - {x: 51, y: 23}
+        - {x: 35, y: 50}
+    - name: tor_4
+      rect:
+        serializedVersion: 2
+        x: 525
+        y: 15
+        width: 102
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 27, y: 50}
+        - {x: -19, y: 50}
+        - {x: -28, y: 48}
+        - {x: -50, y: 32}
+        - {x: -51, y: 18}
+        - {x: -51, y: -50}
+        - {x: 51, y: -50}
+        - {x: 51, y: 22}
+        - {x: 50, y: 33}
+    - name: tor_5
+      rect:
+        serializedVersion: 2
+        x: 653
+        y: 15
+        width: 102
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -51, y: -50}
+        - {x: 51, y: -50}
+        - {x: 51, y: 27}
+        - {x: 50, y: 33}
+        - {x: 36, y: 50}
+        - {x: -24, y: 50}
+        - {x: -51, y: 39}
+    - name: tor_6
+      rect:
+        serializedVersion: 2
+        x: 781
+        y: 15
+        width: 102
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -51, y: -50}
+        - {x: 51, y: -50}
+        - {x: 51, y: 22}
+        - {x: 50, y: 33}
+        - {x: 35, y: 50}
+        - {x: -24, y: 50}
+        - {x: -51, y: 40}
+    - name: tor_7
+      rect:
+        serializedVersion: 2
+        x: 909
+        y: 15
+        width: 102
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -50, y: 32}
+        - {x: -51, y: 26}
+        - {x: -51, y: -50}
+        - {x: 51, y: -50}
+        - {x: 51, y: 29}
+        - {x: 50, y: 33}
+        - {x: 27, y: 50}
+        - {x: -19, y: 50}
+        - {x: -28, y: 48}
+    - name: tor_8
+      rect:
+        serializedVersion: 2
+        x: 1037
+        y: 15
+        width: 102
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -50, y: 32}
+        - {x: -51, y: 26}
+        - {x: -51, y: -50}
+        - {x: 51, y: -50}
+        - {x: 51, y: 30}
+        - {x: 50, y: 33}
+        - {x: 27, y: 50}
+        - {x: -19, y: 50}
+        - {x: -28, y: 48}
+    - name: tor_9
+      rect:
+        serializedVersion: 2
+        x: 1165
+        y: 15
+        width: 102
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -50, y: 32}
+        - {x: -51, y: 27}
+        - {x: -51, y: -50}
+        - {x: 51, y: -50}
+        - {x: 51, y: 30}
+        - {x: 50, y: 33}
+        - {x: 27, y: 50}
+        - {x: -19, y: 50}
+        - {x: -28, y: 48}
+    - name: tor_10
+      rect:
+        serializedVersion: 2
+        x: 1293
+        y: 15
+        width: 102
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -50, y: 32}
+        - {x: -51, y: 27}
+        - {x: -51, y: -50}
+        - {x: 51, y: -50}
+        - {x: 51, y: 30}
+        - {x: 50, y: 33}
+        - {x: 27, y: 50}
+        - {x: -19, y: 50}
+        - {x: -28, y: 48}
+    - name: tor_11
+      rect:
+        serializedVersion: 2
+        x: 1421
+        y: 15
+        width: 102
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -50, y: 32}
+        - {x: -51, y: 27}
+        - {x: -51, y: -50}
+        - {x: 51, y: -50}
+        - {x: 51, y: 30}
+        - {x: 50, y: 33}
+        - {x: 27, y: 50}
+        - {x: -19, y: 50}
+        - {x: -28, y: 48}
+    - name: tor_12
+      rect:
+        serializedVersion: 2
+        x: 1549
+        y: 15
+        width: 102
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 27, y: 50}
+        - {x: -19, y: 50}
+        - {x: -28, y: 48}
+        - {x: -50, y: 32}
+        - {x: -51, y: 18}
+        - {x: -51, y: -50}
+        - {x: 51, y: -50}
+        - {x: 51, y: 22}
+        - {x: 50, y: 33}
     outline: []
   spritePackingTag: 
   userData: 
