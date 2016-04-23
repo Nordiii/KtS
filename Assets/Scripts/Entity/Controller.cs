@@ -45,7 +45,6 @@ public class Controller : MonoBehaviour {
 
 		position = mouse - playerPosition;
 
-
 		animator_.SetBool ("idle", idle);
 		if (!idle) {
 			if ((position.y > 0 && position.y > betrag (position.x)) && !up) {
