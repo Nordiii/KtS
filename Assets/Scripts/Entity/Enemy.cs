@@ -9,8 +9,6 @@ public class Enemy : MonoBehaviour {
 	Animator animator_;
 	Transform myTransform_;
 
-
-
 	float tempx;
 	float tempy;
 	float movex;
@@ -83,40 +81,6 @@ public class Enemy : MonoBehaviour {
 			right = true;
 			animator_.SetTrigger ("right");
 		}
-
-		/*
-		if ((tempy < movey && (movey - tempy > movex - tempx )) && !up) {
-			up = true;
-			down = false;
-			left = false;
-			right = false;
-			animator_.SetTrigger ("up");
-		}
-		if ((tempy > movey && (movey - tempy < movex - tempx )) && !down) {
-			up = false;
-			down = true;
-			left = false;
-			right = false;
-			animator_.SetTrigger ("down");
-		}
-		if ((tempx > movex && (movex - tempx < movey - tempy )) && !left) {
-			up = false;
-			down = false;
-			left = true;
-			right = false;
-			animator_.SetTrigger ("left");
-		}
-		if ((tempx < movex && (movex - tempx > movey - tempy )) && !right) {
-			up = false;
-			down = false;
-			left = false;
-			right = true;
-			animator_.SetTrigger ("right");
-		}
-		*/
-
-
-
 	}
 
 	float betrag(float zahl){

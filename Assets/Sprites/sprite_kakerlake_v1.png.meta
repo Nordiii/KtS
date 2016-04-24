@@ -1,0 +1,335 @@
+fileFormatVersion: 2
+guid: 00276d9626515ce4e8236c3245e2eb55
+timeCreated: 1461494389
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: sprite_kakerlake_v1_0
+    21300002: sprite_kakerlake_v1_1
+    21300004: sprite_kakerlake_v1_2
+    21300006: sprite_kakerlake_v1_3
+    21300008: sprite_kakerlake_v1_4
+    21300010: sprite_kakerlake_v1_5
+    21300012: sprite_kakerlake_v1_6
+    21300014: sprite_kakerlake_v1_7
+    21300016: sprite_kakerlake_v1_8
+    21300018: sprite_kakerlake_v1_9
+    21300020: sprite_kakerlake_v1_10
+    21300022: sprite_kakerlake_v1_11
+    21300024: sprite_kakerlake_v1_12
+    21300026: sprite_kakerlake_v1_13
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -3
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: 0
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 32
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: sprite_kakerlake_v1_0
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 58
+        width: 37
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -11.5, y: 20.5}
+        - {x: -18.5, y: 16.5}
+        - {x: -18.5, y: -20.5}
+        - {x: 14.5, y: -20.5}
+        - {x: 18.5, y: -19.5}
+        - {x: 18.5, y: 11.5}
+        - {x: 13.5, y: 20.5}
+    - name: sprite_kakerlake_v1_1
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 58
+        width: 37
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -11.5, y: 20.5}
+        - {x: -18.5, y: 14.5}
+        - {x: -18.5, y: -20.5}
+        - {x: 18.5, y: -20.5}
+        - {x: 18.5, y: 19.5}
+        - {x: 14.5, y: 20.5}
+    - name: sprite_kakerlake_v1_2
+      rect:
+        serializedVersion: 2
+        x: 297
+        y: 58
+        width: 37
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 5.5, y: 20.5}
+        - {x: -9.5, y: 20.5}
+        - {x: -18.5, y: 14.5}
+        - {x: -18.5, y: -20.5}
+        - {x: 11.5, y: -20.5}
+        - {x: 18.5, y: -17.5}
+        - {x: 18.5, y: 12.5}
+        - {x: 17.5, y: 14.5}
+    - name: sprite_kakerlake_v1_3
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 58
+        width: 37
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 18.5, y: 10.5}
+        - {x: 18.5, y: 13.5}
+        - {x: 17.5, y: 15.5}
+        - {x: 12.5, y: 15.5}
+        - {x: 5.5, y: 20.5}
+        - {x: -8.5, y: 20.5}
+        - {x: -18.5, y: 11.5}
+        - {x: -18.5, y: -20.5}
+        - {x: 10.5, y: -20.5}
+        - {x: 18.5, y: -16.5}
+        - {x: 18.5, y: 5.5}
+        - {x: 15.5, y: 5.5}
+    - name: sprite_kakerlake_v1_4
+      rect:
+        serializedVersion: 2
+        x: 553
+        y: 58
+        width: 37
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -11.5, y: 20.5}
+        - {x: -18.5, y: 17.5}
+        - {x: -18.5, y: -20.5}
+        - {x: 16.5, y: -20.5}
+        - {x: 18.5, y: -19.5}
+        - {x: 18.5, y: 15.5}
+        - {x: 13.5, y: 20.5}
+    - name: sprite_kakerlake_v1_5
+      rect:
+        serializedVersion: 2
+        x: 681
+        y: 58
+        width: 37
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -11.5, y: 20.5}
+        - {x: -18.5, y: 15.5}
+        - {x: -18.5, y: -20.5}
+        - {x: 11.5, y: -20.5}
+        - {x: 18.5, y: -17.5}
+        - {x: 18.5, y: 16.5}
+        - {x: 6.5, y: 20.5}
+    - name: sprite_kakerlake_v1_6
+      rect:
+        serializedVersion: 2
+        x: 809
+        y: 58
+        width: 37
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -18.5, y: 20.5}
+        - {x: -18.5, y: -20.5}
+        - {x: 18.5, y: -20.5}
+        - {x: 18.5, y: 13.5}
+        - {x: 8.5, y: 20.5}
+    - name: sprite_kakerlake_v1_7
+      rect:
+        serializedVersion: 2
+        x: 937
+        y: 58
+        width: 37
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -11.5, y: 20.5}
+        - {x: -18.5, y: 16.5}
+        - {x: -18.5, y: -20.5}
+        - {x: 14.5, y: -20.5}
+        - {x: 18.5, y: -19.5}
+        - {x: 18.5, y: 11.5}
+        - {x: 13.5, y: 20.5}
+    - name: sprite_kakerlake_v1_8
+      rect:
+        serializedVersion: 2
+        x: 1064
+        y: 58
+        width: 37
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -13.5, y: 20.5}
+        - {x: -18.5, y: 18.5}
+        - {x: -18.5, y: -17.5}
+        - {x: -17.5, y: -19.5}
+        - {x: -12.5, y: -20.5}
+        - {x: 18.5, y: -20.5}
+        - {x: 18.5, y: 16.5}
+        - {x: 14.5, y: 20.5}
+    - name: sprite_kakerlake_v1_9
+      rect:
+        serializedVersion: 2
+        x: 1193
+        y: 58
+        width: 37
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -8.5, y: 20.5}
+        - {x: -12.5, y: 19.5}
+        - {x: -18.5, y: 15.5}
+        - {x: -18.5, y: -15.5}
+        - {x: -7.5, y: -20.5}
+        - {x: 17.5, y: -20.5}
+        - {x: 18.5, y: -17.5}
+        - {x: 18.5, y: 9.5}
+        - {x: 9.5, y: 20.5}
+    - name: sprite_kakerlake_v1_10
+      rect:
+        serializedVersion: 2
+        x: 1321
+        y: 58
+        width: 37
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -17.5, y: 20.5}
+        - {x: -18.5, y: 18.5}
+        - {x: -18.5, y: 12.5}
+        - {x: -17.5, y: 10.5}
+        - {x: -18.5, y: 7.5}
+        - {x: -18.5, y: -12.5}
+        - {x: -9.5, y: -20.5}
+        - {x: 18.5, y: -20.5}
+        - {x: 18.5, y: 17.5}
+        - {x: 11.5, y: 20.5}
+    - name: sprite_kakerlake_v1_11
+      rect:
+        serializedVersion: 2
+        x: 1450
+        y: 58
+        width: 37
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -10.5, y: 20.5}
+        - {x: -18.5, y: 16.5}
+        - {x: -18.5, y: -17.5}
+        - {x: -11.5, y: -20.5}
+        - {x: 18.5, y: -20.5}
+        - {x: 18.5, y: 10.5}
+        - {x: 10.5, y: 20.5}
+    - name: sprite_kakerlake_v1_12
+      rect:
+        serializedVersion: 2
+        x: 1577
+        y: 58
+        width: 37
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -8.5, y: 20.5}
+        - {x: -12.5, y: 19.5}
+        - {x: -18.5, y: 15.5}
+        - {x: -18.5, y: -15.5}
+        - {x: -7.5, y: -20.5}
+        - {x: 17.5, y: -20.5}
+        - {x: 18.5, y: -17.5}
+        - {x: 18.5, y: 9.5}
+        - {x: 9.5, y: 20.5}
+    - name: sprite_kakerlake_v1_13
+      rect:
+        serializedVersion: 2
+        x: 1705
+        y: 58
+        width: 37
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -8.5, y: 20.5}
+        - {x: -18.5, y: 11.5}
+        - {x: -18.5, y: -18.5}
+        - {x: -10.5, y: -20.5}
+        - {x: 14.5, y: -20.5}
+        - {x: 18.5, y: -18.5}
+        - {x: 18.5, y: 9.5}
+        - {x: 8.5, y: 20.5}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
