@@ -31,10 +31,14 @@ public class Weapon : MonoBehaviour {
     //Wenn eine Waffe nicht nur gerade aus schießen soll
     public float weapon_Spread = 0;
 
+   
+
     //Projektil mit Ammunition script
     public GameObject bullet;
 
     public AudioClip weapon_sound;
+
+    public float weapon_Sound_volume = 0.5F;
 
     private float current_threshold;
     private float shoot_timer;
@@ -121,7 +125,7 @@ public class Weapon : MonoBehaviour {
 
 
             weapon_Magazin_Ammunition--;
-            GameObject.Find("Main Camera").GetComponent<AudioSource>().PlayOneShot(weapon_sound, 0.7f);
+            GameObject.Find("Main Camera").GetComponent<AudioSource>().PlayOneShot(weapon_sound, weapon_Sound_volume);
             if (infinite_Ammunition)
                 GameObject.Find("UIAmmunition").GetComponent<Text>().text = weapon_Magazin_Ammunition+ " / \u221E";
             else
