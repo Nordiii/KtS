@@ -11,9 +11,9 @@ public class GameManager : MonoBehaviour {
 
 	public GameObject UIGamePaused;	
 	public GameObject UIStartWaves;
+    public GameObject UIAmmunitonCounter;
 
-
-	bool start_ = false;
+    bool start_ = false;
 
 	void Awake(){
 		if (gm == null) {

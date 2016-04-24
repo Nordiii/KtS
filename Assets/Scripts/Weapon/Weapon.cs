@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.UI;
 using System.Collections;
 
 public class Weapon : MonoBehaviour {
@@ -33,6 +34,8 @@ public class Weapon : MonoBehaviour {
     //Projektil mit Ammunition script
     public GameObject bullet;
 
+    public AudioClip weapon_sound;
+
     private float current_threshold;
     private float shoot_timer;
     private bool able_to_shoot;
@@ -47,7 +50,12 @@ public class Weapon : MonoBehaviour {
         shoot_timer = 0;
         reload = false;
         able_to_shoot = true;
-	}
+
+        if (infinite_Ammunition)
+            GameObject.Find("UIAmmunition").GetComponent<Text>().text = weapon_Magazin_Ammunition + " / \u221E";
+        else
+            GameObject.Find("UIAmmunition").GetComponent<Text>().text = weapon_Magazin_Ammunition + " / " + weapon_Reload_Ammunition;
+    }
 	
 	// Update is called once per frame
 	void Update ()
@@ -77,6 +85,10 @@ public class Weapon : MonoBehaviour {
                         weapon_Reload_Ammunition = 0;
                     }
                 reload = false;
+                if (infinite_Ammunition)
+                    GameObject.Find("UIAmmunition").GetComponent<Text>().text = weapon_Magazin_Ammunition + " / \u221E";
+                else
+                    GameObject.Find("UIAmmunition").GetComponent<Text>().text = weapon_Magazin_Ammunition + " / " + weapon_Reload_Ammunition;
             }
                
         }
@@ -98,15 +110,22 @@ public class Weapon : MonoBehaviour {
 
             for(int shoot = 0;shoot < bullets_Per_Shoot;shoot++)
             {
-
+                Vector2 normed = getNormedDirectionVector();
                 GameObject projectile = (GameObject)Instantiate(bullet, transform.position, transform.rotation);
-                projectile.SendMessage("setDirection", getNormedDirectionVector(), 0);
+            //Quaternion.Euler(0,0, Vector2.Angle(transform.position, normed)-30
+            // Debug.Log();
+            // projectile.
+            projectile.SendMessage("setDirection", normed, 0);
                    
             }
 
 
             weapon_Magazin_Ammunition--;
-            
+            GameObject.Find("Main Camera").GetComponent<AudioSource>().PlayOneShot(weapon_sound, 0.7f);
+            if (infinite_Ammunition)
+                GameObject.Find("UIAmmunition").GetComponent<Text>().text = weapon_Magazin_Ammunition+ " / \u221E";
+            else
+                GameObject.Find("UIAmmunition").GetComponent<Text>().text = weapon_Magazin_Ammunition + " / " + weapon_Reload_Ammunition;
         }
 
 
@@ -114,6 +133,7 @@ public class Weapon : MonoBehaviour {
         {
             reload = true;
             current_threshold = reload_Time_Second;
+            GameObject.Find("UIAmmunition").GetComponent<Text>().text = "Reloading...";
         }
         return;
     }
