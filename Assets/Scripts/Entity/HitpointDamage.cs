@@ -27,7 +27,7 @@ public class HitpointDamage : MonoBehaviour {
         if (hitpoints <= 0 && !gameObject.CompareTag("Player"))
             Destroy(gameObject);
         else if (hitpoints <= 0 && gameObject.CompareTag("Player"))
-            animation_.SetBool("die",true);
+            animation_.SetBool("death",true);
 
     }
 
@@ -35,7 +35,7 @@ public class HitpointDamage : MonoBehaviour {
     {
         if (attack_timer >= attack_speed)
         {
-            if (collision.collider.gameObject.CompareTag("Enemy") || collision.collider.gameObject.CompareTag("Player"))
+            if (collision.collider.gameObject.CompareTag("Kakerlake") || collision.collider.gameObject.CompareTag("Player"))
             {
                 collision.gameObject.SendMessage("hitRecived", damage);
 
