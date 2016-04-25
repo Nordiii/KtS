@@ -27,7 +27,7 @@ public class HitpointDamage : MonoBehaviour {
         if (hitpoints <= 0 && !gameObject.CompareTag("Player"))
             Destroy(gameObject);
         else if (hitpoints <= 0 && gameObject.CompareTag("Player"))
-            animation_.SetBool("die",true);
+            animation_.SetBool("death",true);
 
     }
 
