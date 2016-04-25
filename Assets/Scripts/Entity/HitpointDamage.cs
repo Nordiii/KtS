@@ -35,7 +35,7 @@ public class HitpointDamage : MonoBehaviour {
     {
         if (attack_timer >= attack_speed)
         {
-            if (collision.collider.gameObject.CompareTag("Enemy") || collision.collider.gameObject.CompareTag("Player"))
+            if (collision.collider.gameObject.CompareTag("Kakerlake") || collision.collider.gameObject.CompareTag("Player"))
             {
                 collision.gameObject.SendMessage("hitRecived", damage);
 
