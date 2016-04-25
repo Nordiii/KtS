@@ -30,6 +30,8 @@ public class Enemy : MonoBehaviour {
 		myTransform_ = GetComponent<Transform> ();
 		audiosource_ = GetComponent<AudioSource> ();
 		animator_ = GetComponent<Animator> ();
+		audiosource_.Play();
+
 	}
 	
 	// Update is called once per frame
@@ -44,7 +46,6 @@ public class Enemy : MonoBehaviour {
 				Vector2.MoveTowards (transform.position, target.position, moveSpeed * Time.deltaTime);
 		}
 		turnAround ();
-		audiosource_.Play();
 	}
 
 	void turnAround(){

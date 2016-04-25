@@ -11,11 +11,11 @@ public class GameManager : MonoBehaviour {
 	public int countEnemy;
 	public string levelAfterGameOver;
 
-
 	public GameObject UIGamePaused;	
 	public GameObject UIStartWaves;
     public GameObject UIAmmunitonCounter;
 
+	int livingEnemies;
     bool start_ = false;
 
 	void Awake(){
@@ -46,7 +46,9 @@ public class GameManager : MonoBehaviour {
 			start_ = false;
 			for(int i = 0; i < spawners.Length; i++){
 				spawners [i].release(countEnemy);
+				livingEnemies = countEnemy * spawners.Length;
 			}
+			countEnemy += 4;
 		}
 	}
 		
@@ -57,5 +59,12 @@ public class GameManager : MonoBehaviour {
 
 	void nextLevel(){
 		SceneManager.LoadScene (levelAfterGameOver);
+	}
+
+	public void onedead(){
+		livingEnemies--;
+		if(livingEnemies <= 0){
+			UIStartWaves.SetActive (true);
+		}
 	}
 }

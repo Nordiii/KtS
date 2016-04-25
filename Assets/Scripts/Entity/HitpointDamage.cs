@@ -9,10 +9,13 @@ public class HitpointDamage : MonoBehaviour {
 
     private float attack_timer = 0F;
     private Animator animation_;
+
+	GameManager gamemanager_;
 	// Use this for initialization
 	void Start ()
     {
         animation_ = GetComponent<Animator>(); 
+		gamemanager_ = GameManager.gm;
 	}
 	
 	// Update is called once per frame
@@ -24,8 +27,10 @@ public class HitpointDamage : MonoBehaviour {
     void hitRecived(int damage)
     {
         hitpoints -= damage;
-		if (hitpoints <= 0 && !gameObject.CompareTag ("Player"))
+		if (hitpoints <= 0 && !gameObject.CompareTag ("Player")) {
+			gamemanager_.onedead ();
 			Destroy (gameObject);
+		}
 		else if (hitpoints <= 0 && gameObject.CompareTag ("Player"))
 			gameObject.SendMessage ("death");
     }

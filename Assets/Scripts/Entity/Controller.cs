@@ -9,6 +9,7 @@ public class Controller : MonoBehaviour {
 	Rigidbody2D rigidbody2D;
 	Animator animator_;
 	Transform transform_;
+	AudioSource audiosource_;
 
 	Vector3 playerPosition;
 	Vector3 mouse;
@@ -22,6 +23,7 @@ public class Controller : MonoBehaviour {
 		rigidbody2D = GetComponent<Rigidbody2D> ();
 		animator_ = GetComponent<Animator> ();
 		transform_ = GetComponent<Transform> ();
+		audiosource_ = GetComponent<AudioSource> ();
 	}
 
 	// Update is called once per frame
@@ -97,6 +99,7 @@ public class Controller : MonoBehaviour {
 		animator_.SetTrigger("death");
 		ongoing = false;
 		idle = false;
+		audiosource_.Play();
 	}
 
 	public void destroy(){
