@@ -8,6 +8,7 @@ public class Enemy : MonoBehaviour {
 	float distance;
 	Animator animator_;
 	Transform myTransform_;
+	AudioSource audiosource_;
 
 	float tempx;
 	float tempy;
@@ -27,7 +28,7 @@ public class Enemy : MonoBehaviour {
 			}
 		}
 		myTransform_ = GetComponent<Transform> ();
-
+		audiosource_ = GetComponent<AudioSource> ();
 		animator_ = GetComponent<Animator> ();
 	}
 	
@@ -43,6 +44,7 @@ public class Enemy : MonoBehaviour {
 				Vector2.MoveTowards (transform.position, target.position, moveSpeed * Time.deltaTime);
 		}
 		turnAround ();
+		audiosource_.Play();
 	}
 
 	void turnAround(){
