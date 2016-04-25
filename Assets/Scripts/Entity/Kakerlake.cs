@@ -6,7 +6,6 @@ public class Kakerlake : MonoBehaviour {
 	public Transform target;
 	public float minDistance = 1f;
 	float distance;
-	Animator animator_;
 	Transform myTransform_;
 
 	// Use this for initialization
@@ -17,8 +16,6 @@ public class Kakerlake : MonoBehaviour {
 			}
 		}
 		myTransform_ = GetComponent<Transform> ();
-
-		animator_ = GetComponent<Animator> ();
 	}
 
 	// Update is called once per frame
