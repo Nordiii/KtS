@@ -1,0 +1,364 @@
+fileFormatVersion: 2
+guid: 311595363fc27de45abae01dde639a91
+timeCreated: 1461590765
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: player_dead_final_0
+    21300002: player_dead_final_1
+    21300004: player_dead_final_2
+    21300006: player_dead_final_3
+    21300008: player_dead_final_4
+    21300010: player_dead_final_5
+    21300012: player_dead_final_6
+    21300014: player_dead_final_7
+    21300016: player_dead_final_8
+    21300018: player_dead_final_9
+    21300020: player_dead_final_10
+    21300022: player_dead_final_11
+    21300024: player_dead_final_12
+    21300026: player_dead_final_13
+    21300028: player_dead_final_14
+    21300030: player_dead_final_15
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -3
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: 0
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 64
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: player_dead_final_0
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 47
+        width: 51
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -19.0625, y: 29.0625}
+        - {x: -24.0625, y: 21.0625}
+        - {x: -24.0625, y: -20.9375}
+        - {x: -19.0625, y: -28.9375}
+        - {x: 24.9375, y: -28.9375}
+        - {x: 24.9375, y: 28.0625}
+        - {x: 21.9375, y: 29.0625}
+    - name: player_dead_final_1
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 47
+        width: 51
+        height: 59
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -20.0625, y: 28.0625}
+        - {x: -23.0625, y: 25.0625}
+        - {x: -24.0625, y: 18.0625}
+        - {x: -24.0625, y: -24.9375}
+        - {x: -22.0625, y: -27.9375}
+        - {x: 24.9375, y: -27.9375}
+        - {x: 24.9375, y: 28.0625}
+    - name: player_dead_final_2
+      rect:
+        serializedVersion: 2
+        x: 282
+        y: 47
+        width: 51
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -24.125, y: 25.5625}
+        - {x: -24.125, y: -25.4375}
+        - {x: 24.875, y: -25.4375}
+        - {x: 24.875, y: 22.5625}
+        - {x: 20.875, y: 25.5625}
+    - name: player_dead_final_3
+      rect:
+        serializedVersion: 2
+        x: 409
+        y: 47
+        width: 51
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -13.0625, y: 25.5625}
+        - {x: -24.0625, y: 21.5625}
+        - {x: -24.0625, y: -25.4375}
+        - {x: 24.9375, y: -25.4375}
+        - {x: 24.9375, y: 20.5625}
+        - {x: 16.9375, y: 25.5625}
+    - name: player_dead_final_4
+      rect:
+        serializedVersion: 2
+        x: 538
+        y: 47
+        width: 51
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -13.125, y: 25.5625}
+        - {x: -24.125, y: 15.5625}
+        - {x: -24.125, y: -22.4375}
+        - {x: -23.125, y: -25.4375}
+        - {x: 24.875, y: -25.4375}
+        - {x: 24.875, y: 17.5625}
+        - {x: 16.875, y: 25.5625}
+    - name: player_dead_final_5
+      rect:
+        serializedVersion: 2
+        x: 665
+        y: 47
+        width: 51
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -12.0625, y: 25.5625}
+        - {x: -23.0625, y: 16.5625}
+        - {x: -23.0625, y: -21.4375}
+        - {x: -19.0625, y: -25.4375}
+        - {x: 24.9375, y: -25.4375}
+        - {x: 24.9375, y: 19.5625}
+        - {x: 19.9375, y: 25.5625}
+    - name: player_dead_final_6
+      rect:
+        serializedVersion: 2
+        x: 794
+        y: 47
+        width: 51
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -12.125, y: 25.5625}
+        - {x: -23.125, y: 15.5625}
+        - {x: -23.125, y: -21.4375}
+        - {x: -19.125, y: -25.4375}
+        - {x: 24.875, y: -25.4375}
+        - {x: 24.875, y: 20.5625}
+        - {x: 17.875, y: 25.5625}
+    - name: player_dead_final_7
+      rect:
+        serializedVersion: 2
+        x: 921
+        y: 47
+        width: 51
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -22.0625, y: 25.5625}
+        - {x: -22.0625, y: -25.4375}
+        - {x: 24.9375, y: -25.4375}
+        - {x: 24.9375, y: 21.5625}
+        - {x: 22.9375, y: 25.5625}
+    - name: player_dead_final_8
+      rect:
+        serializedVersion: 2
+        x: 1050
+        y: 45
+        width: 51
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -15.125, y: 26.6875}
+        - {x: -20.125, y: 25.6875}
+        - {x: -22.125, y: 21.6875}
+        - {x: -22.125, y: -20.3125}
+        - {x: -18.125, y: -26.3125}
+        - {x: 24.875, y: -26.3125}
+        - {x: 24.875, y: 22.6875}
+        - {x: 20.875, y: 26.6875}
+    - name: player_dead_final_9
+      rect:
+        serializedVersion: 2
+        x: 1177
+        y: 36
+        width: 51
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -21.0625, y: 31.75}
+        - {x: -21.0625, y: -30.25}
+        - {x: 24.9375, y: -30.25}
+        - {x: 24.9375, y: 29.75}
+        - {x: 23.9375, y: 31.75}
+    - name: player_dead_final_10
+      rect:
+        serializedVersion: 2
+        x: 1300
+        y: 29
+        width: 61
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -15.25, y: 34.1875}
+        - {x: -24.25, y: 18.1875}
+        - {x: -24.25, y: -28.8125}
+        - {x: -12.25, y: -33.8125}
+        - {x: 27.75, y: -33.8125}
+        - {x: 29.75, y: -27.8125}
+        - {x: 29.75, y: 33.1875}
+        - {x: 26.75, y: 34.1875}
+    - name: player_dead_final_11
+      rect:
+        serializedVersion: 2
+        x: 1425
+        y: 25
+        width: 69
+        height: 76
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -24.0625, y: 36.4375}
+        - {x: -28.0625, y: 32.4375}
+        - {x: -28.0625, y: -22.5625}
+        - {x: -22.0625, y: -35.5625}
+        - {x: 19.9375, y: -35.5625}
+        - {x: 33.9375, y: -27.5625}
+        - {x: 33.9375, y: 33.4375}
+        - {x: 23.9375, y: 36.4375}
+    - name: player_dead_final_12
+      rect:
+        serializedVersion: 2
+        x: 1552
+        y: 25
+        width: 69
+        height: 76
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -19.5, y: 36.4375}
+        - {x: -28.5, y: 12.4375}
+        - {x: -28.5, y: -24.5625}
+        - {x: -12.5, y: -35.5625}
+        - {x: 31.5, y: -35.5625}
+        - {x: 32.5, y: -31.5625}
+        - {x: 32.5, y: 36.4375}
+    - name: player_dead_final_13
+      rect:
+        serializedVersion: 2
+        x: 1681
+        y: 25
+        width: 69
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -13.0625, y: 36.4375}
+        - {x: -27.0625, y: 19.4375}
+        - {x: -27.0625, y: -14.5625}
+        - {x: -15.0625, y: -35.5625}
+        - {x: 20.9375, y: -35.5625}
+        - {x: 33.9375, y: -30.5625}
+        - {x: 33.9375, y: 25.4375}
+        - {x: 26.9375, y: 36.4375}
+    - name: player_dead_final_14
+      rect:
+        serializedVersion: 2
+        x: 1808
+        y: 25
+        width: 69
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -11.5, y: 36.4375}
+        - {x: -16.5, y: 35.4375}
+        - {x: -27.5, y: 26.4375}
+        - {x: -27.5, y: -18.5625}
+        - {x: -19.5, y: -35.5625}
+        - {x: 32.5, y: -35.5625}
+        - {x: 32.5, y: 33.4375}
+        - {x: 30.5, y: 36.4375}
+    - name: player_dead_final_15
+      rect:
+        serializedVersion: 2
+        x: 1937
+        y: 25
+        width: 69
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -23.0625, y: 36.4375}
+        - {x: -26.0625, y: 33.4375}
+        - {x: -26.0625, y: -17.5625}
+        - {x: -16.0625, y: -35.5625}
+        - {x: 20.9375, y: -35.5625}
+        - {x: 33.9375, y: -22.5625}
+        - {x: 33.9375, y: 33.4375}
+        - {x: 25.9375, y: 36.4375}
+      - - {x: -4.0625, y: -23.5625}
+        - {x: -4.0625, y: 26.4375}
+        - {x: 28.9375, y: 7.4375}
+        - {x: 21.9375, y: -21.5625}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

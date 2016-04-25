@@ -15,7 +15,7 @@ public class Controller : MonoBehaviour {
 	Vector3 position;
 
 	bool up = false, down = false, left = false, right = false;
-	bool idle = false;
+	bool idle = false, ongoing = true;
 
 	// Use this for initialization
 	void Start () {
@@ -25,18 +25,20 @@ public class Controller : MonoBehaviour {
 	}
 
 	// Update is called once per frame
-	void FixedUpdate () {
-		movex = Input.GetAxis ("Horizontal");
-		movey = Input.GetAxis ("Vertical");
-		if (movey == 0 && movex == 0) {
-			idle = true;
-			up = down = left = right = false;
-		} else {
-			idle = false;
-		}
-		rigidbody2D.velocity = new Vector2 (movex * moveSpeed, movey * moveSpeed);
+	void Update () {
+		if (ongoing) {
+			movex = Input.GetAxis ("Horizontal");
+			movey = Input.GetAxis ("Vertical");
+			if (movey == 0 && movex == 0) {
+				idle = true;
+				up = down = left = right = false;
+			} else {
+				idle = false;
+			}
+			rigidbody2D.velocity = new Vector2 (movex * moveSpeed, movey * moveSpeed);
 
-		turn ();
+			turn ();
+		}
 	}
 
 	void turn(){
@@ -90,5 +92,16 @@ public class Controller : MonoBehaviour {
 		} 
 		return zahl;
 	}
-}
+
+	public void death(){
+		animator_.SetTrigger("death");
+		ongoing = false;
+		idle = false;
+	}
+
+	public void destroy(){
+		Camera.main.transform.parent=null; // unchild from player. Keeps same position in world
+		Destroy(gameObject);
+	}
+}	
 

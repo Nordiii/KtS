@@ -24,11 +24,10 @@ public class HitpointDamage : MonoBehaviour {
     void hitRecived(int damage)
     {
         hitpoints -= damage;
-        if (hitpoints <= 0 && !gameObject.CompareTag("Player"))
-            Destroy(gameObject);
-        else if (hitpoints <= 0 && gameObject.CompareTag("Player"))
-            animation_.SetBool("death",true);
-
+		if (hitpoints <= 0 && !gameObject.CompareTag ("Player"))
+			Destroy (gameObject);
+		else if (hitpoints <= 0 && gameObject.CompareTag ("Player"))
+			gameObject.SendMessage ("death");
     }
 
     void OnCollisionEnter2D(Collision2D collision)
