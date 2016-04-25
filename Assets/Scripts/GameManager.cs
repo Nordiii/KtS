@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour {
 
@@ -8,6 +9,8 @@ public class GameManager : MonoBehaviour {
 	public Spawner[] spawners; 
 	public bool paused = false;
 	public int countEnemy;
+	public string levelAfterGameOver;
+
 
 	public GameObject UIGamePaused;	
 	public GameObject UIStartWaves;
@@ -50,5 +53,9 @@ public class GameManager : MonoBehaviour {
 	public void start(){
 		UIStartWaves.SetActive (false);
 		start_ = true;
+	}
+
+	void nextLevel(){
+		SceneManager.LoadScene (levelAfterGameOver);
 	}
 }
