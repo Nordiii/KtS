@@ -33,6 +33,12 @@ public class Ammunition : MonoBehaviour {
     {
         direction = new Vector2(direction.x * ammunition_Speed, direction.y * ammunition_Speed);
         gameObject.GetComponent<Rigidbody2D>().AddForce(direction);
+        //Das Projektil wird in die richtige Richtung gedreht
+        var mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        Quaternion rota = Quaternion.LookRotation(transform.position - mousePosition, Vector3.forward);
+        transform.rotation = rota;
+        transform.eulerAngles = new Vector3(0, 0, transform.eulerAngles.z);
+
     }
 
     void OnCollisionEnter2D(Collision2D collision)

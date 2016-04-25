@@ -116,9 +116,7 @@ public class Weapon : MonoBehaviour {
             {
                 Vector2 normed = getNormedDirectionVector();
                 GameObject projectile = (GameObject)Instantiate(bullet, transform.position, transform.rotation);
-            //Quaternion.Euler(0,0, Vector2.Angle(transform.position, normed)-30
-            // Debug.Log();
-            // projectile.
+
             projectile.SendMessage("setDirection", normed, 0);
                    
             }
