@@ -5,6 +5,7 @@ public class Enemy : MonoBehaviour {
 	public float moveSpeed = 7.0f;
 	public Transform target;
 	public float minDistance = 1f;
+	public AudioClip deathclip;
 	float distance;
 	Animator animator_;
 	Transform myTransform_;
@@ -30,8 +31,6 @@ public class Enemy : MonoBehaviour {
 		myTransform_ = GetComponent<Transform> ();
 		audiosource_ = GetComponent<AudioSource> ();
 		animator_ = GetComponent<Animator> ();
-		audiosource_.Play();
-
 	}
 	
 	// Update is called once per frame
@@ -97,5 +96,9 @@ public class Enemy : MonoBehaviour {
 			return -1 * zahl;
 		} 
 		return zahl;
+	}
+
+	public void deathSound(){
+		audiosource_.PlayOneShot (deathclip,3f);
 	}
 }
