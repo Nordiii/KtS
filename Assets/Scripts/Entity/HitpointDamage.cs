@@ -7,6 +7,8 @@ public class HitpointDamage : MonoBehaviour {
     public int damage = 1;
     public float attack_speed = 2F;
 
+	bool death = false;
+
     private float attack_timer = 0F;
     private Animator animation_;
 
@@ -26,13 +28,15 @@ public class HitpointDamage : MonoBehaviour {
 
     void hitRecived(int damage)
     {
-        hitpoints -= damage;
-		if (hitpoints <= 0 && !gameObject.CompareTag ("Player")) {
-			gamemanager_.onedead ();
-			animation_.SetTrigger ("death");
+		if (!death) {
+			hitpoints -= damage;
+			if (hitpoints <= 0 && !gameObject.CompareTag ("Player")) {
+				death = true;
+				gamemanager_.onedead ();
+				animation_.SetTrigger ("death");
+			} else if (hitpoints <= 0 && gameObject.CompareTag ("Player"))
+				gameObject.SendMessage ("death");
 		}
-		else if (hitpoints <= 0 && gameObject.CompareTag ("Player"))
-			gameObject.SendMessage ("death");
     }
 
     void OnCollisionEnter2D(Collision2D collision)
