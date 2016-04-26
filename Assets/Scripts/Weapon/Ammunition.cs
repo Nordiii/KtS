@@ -43,7 +43,7 @@ public class Ammunition : MonoBehaviour {
 
     void OnCollisionEnter2D(Collision2D collision)
     {
-        if(collision.collider.gameObject.CompareTag("Enemy"))
+        if(collision.collider.gameObject.CompareTag("Enemy")|| collision.collider.gameObject.CompareTag("Kakerlake"))
         {
             //Fügt die geschwindigkeit hinzu bevor das gameObject zerstört wird (knockback)
             collision.rigidbody.AddForce(collision.relativeVelocity);
