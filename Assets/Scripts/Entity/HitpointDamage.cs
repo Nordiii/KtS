@@ -29,7 +29,7 @@ public class HitpointDamage : MonoBehaviour {
         hitpoints -= damage;
 		if (hitpoints <= 0 && !gameObject.CompareTag ("Player")) {
 			gamemanager_.onedead ();
-			Destroy (gameObject);
+			animation_.SetTrigger ("death");
 		}
 		else if (hitpoints <= 0 && gameObject.CompareTag ("Player"))
 			gameObject.SendMessage ("death");
@@ -55,4 +55,8 @@ public class HitpointDamage : MonoBehaviour {
 
         }
     }
+
+	public void destroy(){
+		Destroy (gameObject);
+	}
 }

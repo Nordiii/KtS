@@ -1,9 +1,13 @@
 fileFormatVersion: 2
 guid: 5b369ade5c17ddd478d5c3ae66103cf2
-timeCreated: 1461678606
+timeCreated: 1461699225
 licenseType: Free
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: sprite_death_kakerlake_v1_0
+    21300002: sprite_death_kakerlake_v1_1
+    21300004: sprite_death_kakerlake_v1_2
+    21300006: sprite_death_kakerlake_v1_3
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -26,30 +30,241 @@ TextureImporter:
   cubemapConvolutionSteps: 7
   cubemapConvolutionExponent: 1.5
   seamlessCubemap: 0
-  textureFormat: -1
+  textureFormat: -3
   maxTextureSize: 2048
   textureSettings:
-    filterMode: -1
-    aniso: -1
+    filterMode: 0
+    aniso: 16
     mipBias: -1
-    wrapMode: -1
-  nPOTScale: 1
+    wrapMode: 1
+  nPOTScale: 0
   lightmap: 0
   rGBM: 0
   compressionQuality: 50
   allowsAlphaSplitting: 0
-  spriteMode: 0
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
-  spritePixelsToUnits: 100
-  alphaIsTransparency: 0
-  textureType: -1
+  spritePixelsToUnits: 32
+  alphaIsTransparency: 1
+  textureType: 8
   buildTargetSettings: []
   spriteSheet:
-    sprites: []
+    sprites:
+    - name: sprite_death_kakerlake_v1_0
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 50
+        width: 53
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 23.5, y: 10.5}
+        - {x: 13.5, y: 26.5}
+        - {x: -4.5, y: 26.5}
+        - {x: -4.5, y: -26.5}
+        - {x: 14.5, y: -26.5}
+        - {x: 23.5, y: -18.5}
+        - {x: 26.5, y: -10.5}
+        - {x: 26.5, y: 3.5}
+      - - {x: 1.5, y: 4.5}
+        - {x: -0.5, y: 13.5}
+        - {x: -11.5, y: 18.5}
+        - {x: -13.5, y: 18.5}
+        - {x: -20.5, y: 13.5}
+        - {x: -19.5, y: 10.5}
+        - {x: -26.5, y: -1.5}
+        - {x: -26.5, y: -5.5}
+        - {x: -23.5, y: -6.5}
+        - {x: -26.5, y: -15.5}
+        - {x: -25.5, y: -18.5}
+        - {x: -22.5, y: -18.5}
+        - {x: -3.5, y: -16.5}
+        - {x: -0.5, y: -15.5}
+        - {x: 1.5, y: -8.5}
+    - name: sprite_death_kakerlake_v1_1
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 54
+        width: 39
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -15.5, y: 23}
+        - {x: -19.5, y: 21}
+        - {x: -19.5, y: -21}
+        - {x: 19.5, y: -21}
+        - {x: 19.5, y: 15}
+        - {x: 6.5, y: 23}
+    - name: sprite_death_kakerlake_v1_2
+      rect:
+        serializedVersion: 2
+        x: 284
+        y: 46
+        width: 58
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -2, y: -20}
+        - {x: -4, y: -22}
+        - {x: -4, y: -29}
+        - {x: -1, y: -30}
+        - {x: 9, y: -30}
+        - {x: 10, y: -28}
+        - {x: 10, y: -22}
+        - {x: 8, y: -20}
+      - - {x: -19, y: -9}
+        - {x: -29, y: -17}
+        - {x: -29, y: -20}
+        - {x: -28, y: -22}
+        - {x: -24, y: -22}
+        - {x: -6, y: -21}
+        - {x: -5, y: -17}
+        - {x: -5, y: -11}
+        - {x: -8, y: -9}
+      - - {x: 15, y: -11}
+        - {x: 11, y: -15}
+        - {x: 11, y: -19}
+        - {x: 13, y: -21}
+        - {x: 28, y: -21}
+        - {x: 28, y: -13}
+        - {x: 24, y: -11}
+      - - {x: 13, y: 17}
+        - {x: 15, y: 17}
+        - {x: 18, y: 21}
+        - {x: 18, y: 26}
+        - {x: 14, y: 30}
+        - {x: 3, y: 30}
+        - {x: 3, y: 1}
+        - {x: 5, y: -11}
+        - {x: 26, y: -11}
+        - {x: 29, y: -7}
+        - {x: 29, y: 17}
+      - - {x: -6, y: 22}
+        - {x: -25, y: 22}
+        - {x: -29, y: 17}
+        - {x: -29, y: -5}
+        - {x: -21, y: -8}
+        - {x: -6, y: -8}
+        - {x: -4, y: -6}
+        - {x: -4, y: 19}
+      - - {x: 0, y: 16}
+        - {x: 3, y: 17}
+        - {x: 3, y: 20}
+        - {x: 0, y: 21}
+        - {x: -2, y: 19}
+    - name: sprite_death_kakerlake_v1_3
+      rect:
+        serializedVersion: 2
+        x: 399
+        y: 39
+        width: 83
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 1.5, y: -25}
+        - {x: -0.5, y: -27}
+        - {x: 1.5, y: -33}
+        - {x: 4.5, y: -35}
+        - {x: 11.5, y: -35}
+        - {x: 13.5, y: -33}
+        - {x: 13.5, y: -27}
+        - {x: 11.5, y: -25}
+      - - {x: -10.5, y: -14}
+        - {x: -23.5, y: -14}
+        - {x: -33.5, y: -22}
+        - {x: -33.5, y: -25}
+        - {x: -32.5, y: -27}
+        - {x: -29.5, y: -27}
+        - {x: -10.5, y: -25}
+        - {x: -9.5, y: -24}
+        - {x: -9.5, y: -16}
+      - - {x: 27.5, y: -15}
+        - {x: 20.5, y: -15}
+        - {x: 16.5, y: -19}
+        - {x: 16.5, y: -25}
+        - {x: 26.5, y: -25}
+        - {x: 31.5, y: -24}
+        - {x: 33.5, y: -23}
+        - {x: 33.5, y: -20}
+      - - {x: 19.5, y: 10}
+        - {x: 19.5, y: -6}
+        - {x: 20.5, y: -11}
+        - {x: 21.5, y: -12}
+        - {x: 34.5, y: -12}
+        - {x: 40.5, y: -7}
+        - {x: 40.5, y: 2}
+        - {x: 31.5, y: 10}
+      - - {x: -16.5, y: 8}
+        - {x: -20.5, y: 8}
+        - {x: -24.5, y: 7}
+        - {x: -29.5, y: 6}
+        - {x: -29.5, y: -2}
+        - {x: -28.5, y: -8}
+        - {x: -13.5, y: -8}
+        - {x: -12.5, y: -6}
+        - {x: -12.5, y: 3}
+      - - {x: -36.5, y: 4}
+        - {x: -41.5, y: -2}
+        - {x: -40.5, y: -5}
+        - {x: -38.5, y: -5}
+        - {x: -29.5, y: 2}
+        - {x: -30.5, y: 5}
+        - {x: -33.5, y: 5}
+      - - {x: -25.5, y: 17}
+        - {x: -27.5, y: 16}
+        - {x: -27.5, y: 10}
+        - {x: -25.5, y: 8}
+        - {x: -19.5, y: 8}
+        - {x: -15.5, y: 10}
+        - {x: -15.5, y: 17}
+      - - {x: 23.5, y: 23}
+        - {x: 23.5, y: 18}
+        - {x: 26.5, y: 12}
+        - {x: 40.5, y: 12}
+        - {x: 41.5, y: 14}
+        - {x: 41.5, y: 23}
+      - - {x: -17.5, y: 28}
+        - {x: -25.5, y: 23}
+        - {x: -24.5, y: 20}
+        - {x: -21.5, y: 20}
+        - {x: -16.5, y: 22}
+        - {x: -14.5, y: 25}
+        - {x: -14.5, y: 27}
+      - - {x: -7.5, y: 27}
+        - {x: -9.5, y: 25}
+        - {x: -9.5, y: 22}
+        - {x: -7.5, y: 20}
+        - {x: -2.5, y: 20}
+        - {x: -0.5, y: 22}
+        - {x: -0.5, y: 24}
+        - {x: -3.5, y: 27}
+      - - {x: 9.5, y: 22}
+        - {x: 12.5, y: 23}
+        - {x: 12.5, y: 26}
+        - {x: 9.5, y: 27}
+        - {x: 7.5, y: 25}
+      - - {x: 13.5, y: 35}
+        - {x: 12.5, y: 32}
+        - {x: 12.5, y: 23}
+        - {x: 13.5, y: 22}
+        - {x: 25.5, y: 22}
+        - {x: 27.5, y: 26}
+        - {x: 27.5, y: 34}
+        - {x: 25.5, y: 35}
     outline: []
   spritePackingTag: 
   userData: 

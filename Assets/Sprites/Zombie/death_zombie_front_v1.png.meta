@@ -1,9 +1,14 @@
 fileFormatVersion: 2
 guid: 8d5a2634259af46418462411e6ed4226
-timeCreated: 1461678606
+timeCreated: 1461699318
 licenseType: Free
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: death_zombie_front_v1_0
+    21300002: death_zombie_front_v1_1
+    21300004: death_zombie_front_v1_2
+    21300006: death_zombie_front_v1_3
+    21300008: death_zombie_front_v1_4
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -26,30 +31,100 @@ TextureImporter:
   cubemapConvolutionSteps: 7
   cubemapConvolutionExponent: 1.5
   seamlessCubemap: 0
-  textureFormat: -1
+  textureFormat: -3
   maxTextureSize: 2048
   textureSettings:
-    filterMode: -1
-    aniso: -1
+    filterMode: 0
+    aniso: 16
     mipBias: -1
-    wrapMode: -1
-  nPOTScale: 1
+    wrapMode: 1
+  nPOTScale: 0
   lightmap: 0
   rGBM: 0
   compressionQuality: 50
   allowsAlphaSplitting: 0
-  spriteMode: 0
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
-  spritePixelsToUnits: 100
-  alphaIsTransparency: 0
-  textureType: -1
+  spritePixelsToUnits: 8
+  alphaIsTransparency: 1
+  textureType: 8
   buildTargetSettings: []
   spriteSheet:
-    sprites: []
+    sprites:
+    - name: death_zombie_front_v1_0
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 56
+        width: 37
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -14.5, y: 20.5}
+        - {x: -18.5, y: 11.5}
+        - {x: -18.5, y: -9.5}
+        - {x: -13.5, y: -20.5}
+        - {x: 15.5, y: -20.5}
+        - {x: 18.5, y: -11.5}
+        - {x: 18.5, y: 13.5}
+        - {x: 15.5, y: 20.5}
+    - name: death_zombie_front_v1_1
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 61
+        width: 37
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -18.5, y: 17.5}
+        - {x: -18.5, y: -15.5}
+        - {x: -14.5, y: -17.5}
+        - {x: 13.5, y: -17.5}
+        - {x: 18.5, y: -11.5}
+        - {x: 18.5, y: 2.5}
+        - {x: 14.5, y: 17.5}
+    - name: death_zombie_front_v1_2
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 65
+        width: 33
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: death_zombie_front_v1_3
+      rect:
+        serializedVersion: 2
+        x: 423
+        y: 65
+        width: 33
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: death_zombie_front_v1_4
+      rect:
+        serializedVersion: 2
+        x: 551
+        y: 65
+        width: 33
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     outline: []
   spritePackingTag: 
   userData: 
