@@ -11,6 +11,7 @@ public class HitpointDamage : MonoBehaviour {
 
     private float attack_timer = 0F;
     private Animator animation_;
+	private SpriteRenderer renderer_;
 
 	GameManager gamemanager_;
 	// Use this for initialization
@@ -18,6 +19,7 @@ public class HitpointDamage : MonoBehaviour {
     {
         animation_ = GetComponent<Animator>(); 
 		gamemanager_ = GameManager.gm;
+		renderer_ = GetComponent<SpriteRenderer> ();
 	}
 	
 	// Update is called once per frame
@@ -34,8 +36,12 @@ public class HitpointDamage : MonoBehaviour {
 				death = true;
 				gamemanager_.onedead ();
 				animation_.SetTrigger ("death");
-			} else if (hitpoints <= 0 && gameObject.CompareTag ("Player"))
+			} else if (hitpoints <= 0 && gameObject.CompareTag ("Player")) {
 				gameObject.SendMessage ("death");
+			} else if (gameObject.CompareTag ("Player")) {
+				renderer_.color = new Color (100f,0f,0f);
+				StartCoroutine (changeColorDefault ());
+			}
 		}
     }
 
@@ -62,5 +68,10 @@ public class HitpointDamage : MonoBehaviour {
 
 	public void destroy(){
 		Destroy (gameObject);
+	}
+
+	IEnumerator changeColorDefault(){
+		yield return new WaitForSeconds (0.5f);
+		renderer_.color = new Color(1,1,1);
 	}
 }
