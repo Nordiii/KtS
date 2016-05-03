@@ -15,7 +15,7 @@ public class Enemy : MonoBehaviour {
 	float tempy;
 	float movex;
 	float movey;
-	bool up = false, down = false, right = false, left = false;
+	bool up = false, down = false, right = false, left = false, dead = false;
 
 	Vector3 zombiePosition;
 	Vector3 playerPosition;
@@ -35,6 +35,9 @@ public class Enemy : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+		if (dead) {
+			return;
+		}
 		if (target == null) {
 			return;
 		}
@@ -97,7 +100,10 @@ public class Enemy : MonoBehaviour {
 		} 
 		return zahl;
 	}
-
+	 
+	public void death(){
+		dead = true;
+	}
 	public void deathSound(){
 		audiosource_.PlayOneShot (deathclip,3f);
 	}
