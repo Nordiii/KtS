@@ -1,9 +1,13 @@
 fileFormatVersion: 2
 guid: 1dadc3d89112b48438405ecfc69928e9
-timeCreated: 1461167295
+timeCreated: 1462279046
 licenseType: Free
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: pingu_0
+    21300002: pingu_1
+    21300004: pingu_2
+    21300006: pingu_3
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -26,30 +30,101 @@ TextureImporter:
   cubemapConvolutionSteps: 7
   cubemapConvolutionExponent: 1.5
   seamlessCubemap: 0
-  textureFormat: -1
+  textureFormat: -3
   maxTextureSize: 2048
   textureSettings:
-    filterMode: -1
-    aniso: -1
+    filterMode: 0
+    aniso: 16
     mipBias: -1
-    wrapMode: -1
-  nPOTScale: 1
+    wrapMode: 1
+  nPOTScale: 0
   lightmap: 0
   rGBM: 0
   compressionQuality: 50
   allowsAlphaSplitting: 0
-  spriteMode: 0
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
-  spritePixelsToUnits: 100
-  alphaIsTransparency: 0
-  textureType: -1
+  spritePixelsToUnits: 24
+  alphaIsTransparency: 1
+  textureType: 8
   buildTargetSettings: []
   spriteSheet:
-    sprites: []
+    sprites:
+    - name: pingu_0
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 18
+        width: 73
+        height: 104
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -36.5, y: -52}
+        - {x: 36.5, y: -52}
+        - {x: 36.5, y: -14}
+        - {x: 15.5, y: 52}
+        - {x: -20.5, y: 52}
+        - {x: -36.5, y: -5}
+    - name: pingu_1
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 17
+        width: 73
+        height: 105
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -13.5, y: 52.5}
+        - {x: -33.5, y: 4.5}
+        - {x: -36.5, y: -15.5}
+        - {x: -36.5, y: -52.5}
+        - {x: 36.5, y: -52.5}
+        - {x: 36.5, y: 17.5}
+        - {x: 13.5, y: 52.5}
+    - name: pingu_2
+      rect:
+        serializedVersion: 2
+        x: 284
+        y: 18
+        width: 73
+        height: 104
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -36.5, y: -52}
+        - {x: 36.5, y: -52}
+        - {x: 36.5, y: -14}
+        - {x: 15.5, y: 52}
+        - {x: -20.5, y: 52}
+        - {x: -36.5, y: -5}
+    - name: pingu_3
+      rect:
+        serializedVersion: 2
+        x: 412
+        y: 17
+        width: 73
+        height: 105
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -11.5, y: 52.5}
+        - {x: -35.5, y: 5.5}
+        - {x: -36.5, y: -4.5}
+        - {x: -36.5, y: -51.5}
+        - {x: -34.5, y: -52.5}
+        - {x: 36.5, y: -52.5}
+        - {x: 36.5, y: 14.5}
+        - {x: 13.5, y: 52.5}
     outline: []
   spritePackingTag: 
   userData: 
