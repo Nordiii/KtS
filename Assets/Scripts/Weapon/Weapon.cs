@@ -119,7 +119,7 @@ public class Weapon : MonoBehaviour {
                 Vector2 normed = getNormedDirectionVector();
                 GameObject projectile = (GameObject)Instantiate(bullet, transform.position, transform.rotation);
 
-            projectile.SendMessage("setDirection", normed, 0);
+                projectile.SendMessage("setDirection", normed, 0);
                    
             }
 
@@ -133,7 +133,7 @@ public class Weapon : MonoBehaviour {
         }
 
 
-        if(weapon_Magazin_Ammunition == 0)
+        if(weapon_Magazin_Ammunition == 0 && weapon_Reload_Ammunition != 0)
         {
             reload = true;
             current_threshold = reload_Time_Second;

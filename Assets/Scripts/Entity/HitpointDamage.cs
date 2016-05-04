@@ -14,6 +14,12 @@ public class HitpointDamage : MonoBehaviour {
 	private SpriteRenderer renderer_;
 
 	GameManager gamemanager_;
+
+    public void addHitpoints(int hp)
+    {
+        hitpoints += hp;
+    }
+
 	// Use this for initialization
 	void Start ()
     {
