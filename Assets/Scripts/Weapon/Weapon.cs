@@ -59,12 +59,14 @@ public class Weapon : MonoBehaviour {
             GameObject.Find("UIAmmunition").GetComponent<Text>().text = weapon_Magazin_Ammunition + " / \u221E";
         else
             GameObject.Find("UIAmmunition").GetComponent<Text>().text = weapon_Magazin_Ammunition + " / " + weapon_Reload_Ammunition;
+
+       
     }
 	
 	// Update is called once per frame
 	void Update ()
     {
-      
+   
         if(!able_to_shoot)
         {
             if (!(shoot_timer >= current_threshold))
