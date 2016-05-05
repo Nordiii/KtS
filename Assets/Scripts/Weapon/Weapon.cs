@@ -31,7 +31,7 @@ public class Weapon : MonoBehaviour {
     //Wenn eine Waffe nicht nur gerade aus schießen soll
     public float weapon_Spread = 0;
 
-    public GameObject default_weapon;
+    public Sprite reaload_sprite;
 
     //Projektil mit Ammunition script
     public GameObject bullet;
@@ -44,7 +44,7 @@ public class Weapon : MonoBehaviour {
     private float shoot_timer;
     private bool able_to_shoot;
     private bool reload;
-
+    private Sprite default_sprite;
     private Vector2 start;
     private Vector2 target;
 
@@ -55,7 +55,7 @@ public class Weapon : MonoBehaviour {
         shoot_timer = 0;
         reload = false;
         able_to_shoot = true;
-
+        default_sprite = GetComponent<SpriteRenderer>().sprite;
         if (infinite_Ammunition)
             GameObject.Find("UIAmmunition").GetComponent<Text>().text = weapon_Magazin_Ammunition + " / \u221E";
         else
@@ -94,6 +94,7 @@ public class Weapon : MonoBehaviour {
                         weapon_Reload_Ammunition = 0;
                     }
                 reload = false;
+                GetComponent<SpriteRenderer>().sprite = default_sprite;
                 if (infinite_Ammunition)
                     GameObject.Find("UIAmmunition").GetComponent<Text>().text = weapon_Magazin_Ammunition + " / \u221E";
                 else
@@ -141,6 +142,8 @@ public class Weapon : MonoBehaviour {
             reload = true;
             current_threshold = reload_Time_Second;
             GameObject.Find("UIAmmunition").GetComponent<Text>().text = "Reloading...";
+            if(reaload_sprite != null)
+                GetComponent<SpriteRenderer>().sprite = reaload_sprite;
         }
         else if (weapon_Reload_Ammunition == 0 && weapon_Magazin_Ammunition == 0)
         {
