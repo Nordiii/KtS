@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.UI;
 
 public class HitpointDamage : MonoBehaviour {
 
@@ -18,6 +19,9 @@ public class HitpointDamage : MonoBehaviour {
     public void addHitpoints(int hp)
     {
         hitpoints += hp;
+        renderer_.color = new Color(0f, 100f, 0f);
+        StartCoroutine(changeColorDefault());
+        GameObject.Find("UIHitpoints").GetComponent<Text>().text = "" + hitpoints;
     }
 
 	// Use this for initialization
@@ -45,9 +49,11 @@ public class HitpointDamage : MonoBehaviour {
 				gameObject.SendMessage ("death");
 			} else if (hitpoints <= 0 && gameObject.CompareTag ("Player")) {
 				gameObject.SendMessage ("death");
-			} else if (gameObject.CompareTag ("Player")) {
+			} else if (gameObject.CompareTag ("Player"))
+            {
 				renderer_.color = new Color (100f,0f,0f);
 				StartCoroutine (changeColorDefault ());
+                GameObject.Find("UIHitpoints").GetComponent<Text>().text = ""+hitpoints ;
 			}
 		}
     }
@@ -81,4 +87,5 @@ public class HitpointDamage : MonoBehaviour {
 		yield return new WaitForSeconds (0.5f);
 		renderer_.color = new Color(1,1,1);
 	}
+
 }

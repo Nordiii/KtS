@@ -15,7 +15,8 @@ public class Medikit : MonoBehaviour {
 
     public void pickedUp()
     {
-        GameObject.FindGameObjectWithTag("Player").GetComponent<HitpointDamage>().hitpoints += addHealth;
+        GameObject.FindGameObjectWithTag("Player").GetComponent<HitpointDamage>().addHitpoints(addHealth) ;
+        
         Destroy(gameObject);
     }
 }

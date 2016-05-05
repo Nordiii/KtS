@@ -50,6 +50,7 @@ public class Weapon : MonoBehaviour {
 
 	void Start ()
     {
+
         current_threshold = 0;
         shoot_timer = 0;
         reload = false;
@@ -59,6 +60,8 @@ public class Weapon : MonoBehaviour {
             GameObject.Find("UIAmmunition").GetComponent<Text>().text = weapon_Magazin_Ammunition + " / \u221E";
         else
             GameObject.Find("UIAmmunition").GetComponent<Text>().text = weapon_Magazin_Ammunition + " / " + weapon_Reload_Ammunition;
+
+        GameObject.Find("UIWeaponname").GetComponent<Text>().text = weapon_Name;
 
        
     }
