@@ -31,7 +31,7 @@ public class Weapon : MonoBehaviour {
     //Wenn eine Waffe nicht nur gerade aus schießen soll
     public float weapon_Spread = 0;
 
-   
+    public GameObject default_weapon;
 
     //Projektil mit Ammunition script
     public GameObject bullet;
@@ -136,13 +136,18 @@ public class Weapon : MonoBehaviour {
         }
 
 
-        if(weapon_Magazin_Ammunition == 0 && weapon_Reload_Ammunition != 0)
+        if (weapon_Magazin_Ammunition == 0 && weapon_Reload_Ammunition != 0)
         {
             reload = true;
             current_threshold = reload_Time_Second;
             GameObject.Find("UIAmmunition").GetComponent<Text>().text = "Reloading...";
         }
-        return;
+        else if (weapon_Reload_Ammunition == 0 && weapon_Magazin_Ammunition == 0)
+        {
+                GameObject.Find("Player").SendMessage( "switchOut");
+        }
+
+            return;
     }
 
 
