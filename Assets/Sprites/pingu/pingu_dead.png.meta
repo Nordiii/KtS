@@ -1,0 +1,464 @@
+fileFormatVersion: 2
+guid: a7d4776d4d3a1024d87697c5a6a64679
+timeCreated: 1462793663
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: pingu_dead_0
+    21300002: pingu_dead_1
+    21300004: pingu_dead_2
+    21300006: pingu_dead_3
+    21300008: pingu_dead_4
+    21300010: pingu_dead_5
+    21300012: pingu_dead_6
+    21300014: pingu_dead_7
+    21300016: pingu_dead_8
+    21300018: pingu_dead_9
+    21300020: pingu_dead_10
+    21300022: pingu_dead_11
+    21300024: pingu_dead_12
+    21300026: pingu_dead_13
+    21300028: pingu_dead_14
+    21300030: pingu_dead_15
+    21300032: pingu_dead_16
+    21300034: pingu_dead_17
+    21300036: pingu_dead_18
+    21300038: pingu_dead_19
+    21300040: pingu_dead_20
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -3
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: 0
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 24
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: pingu_dead_0
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 18
+        width: 74
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -10.263157, y: 44.157894}
+        - {x: -31.263157, y: 16.157894}
+        - {x: -31.263157, y: -43.842106}
+        - {x: 32.736843, y: -43.842106}
+        - {x: 32.736843, y: -3.8421059}
+        - {x: 15.736843, y: 44.157894}
+    - name: pingu_dead_1
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 18
+        width: 73
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -13.631577, y: 44.157894}
+        - {x: -29.631577, y: 5.157894}
+        - {x: -30.631577, y: -2.8421059}
+        - {x: -30.631577, y: -43.842106}
+        - {x: 31.368423, y: -43.842106}
+        - {x: 31.368423, y: 13.157894}
+        - {x: 15.368423, y: 44.157894}
+    - name: pingu_dead_2
+      rect:
+        serializedVersion: 2
+        x: 284
+        y: 18
+        width: 73
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -14.842102, y: 44.157894}
+        - {x: -30.842102, y: 9.157894}
+        - {x: -30.842102, y: -43.842106}
+        - {x: 31.157898, y: -43.842106}
+        - {x: 31.157898, y: 27.157894}
+        - {x: 13.157898, y: 44.157894}
+    - name: pingu_dead_3
+      rect:
+        serializedVersion: 2
+        x: 412
+        y: 18
+        width: 74
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -31.052643, y: -43.842106}
+        - {x: 32.947357, y: -43.842106}
+        - {x: 32.947357, y: 30.157894}
+        - {x: 30.947357, y: 44.157894}
+        - {x: -30.052643, y: 44.157894}
+        - {x: -31.052643, y: 35.157894}
+    - name: pingu_dead_4
+      rect:
+        serializedVersion: 2
+        x: 539
+        y: 18
+        width: 75
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -15.605255, y: 44.157894}
+        - {x: -31.605255, y: 17.157894}
+        - {x: -31.605255, y: -43.842106}
+        - {x: 33.394745, y: -43.842106}
+        - {x: 33.394745, y: 11.157894}
+        - {x: 15.394745, y: 44.157894}
+    - name: pingu_dead_5
+      rect:
+        serializedVersion: 2
+        x: 667
+        y: 18
+        width: 74
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 13.184204, y: 44.157894}
+        - {x: -12.815796, y: 44.157894}
+        - {x: -18.815796, y: 37.157894}
+        - {x: -30.815796, y: -11.842106}
+        - {x: -30.815796, y: -43.842106}
+        - {x: 32.184204, y: -43.842106}
+        - {x: 32.184204, y: -17.842106}
+        - {x: 28.184204, y: 9.157894}
+    - name: pingu_dead_6
+      rect:
+        serializedVersion: 2
+        x: 796
+        y: 18
+        width: 73
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -10.684204, y: 44.157894}
+        - {x: -29.684204, y: 13.157894}
+        - {x: -30.684204, y: -0.84210587}
+        - {x: -30.684204, y: -43.842106}
+        - {x: 31.315796, y: -43.842106}
+        - {x: 31.315796, y: 6.157894}
+        - {x: 17.315796, y: 44.157894}
+    - name: pingu_dead_7
+      rect:
+        serializedVersion: 2
+        x: 924
+        y: 18
+        width: 73
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 31.105286, y: -0.84210587}
+        - {x: 18.105286, y: 44.157894}
+        - {x: -19.894714, y: 44.157894}
+        - {x: -30.894714, y: 10.157894}
+        - {x: -30.894714, y: -43.842106}
+        - {x: 31.105286, y: -43.842106}
+    - name: pingu_dead_8
+      rect:
+        serializedVersion: 2
+        x: 1051
+        y: 18
+        width: 75
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 20.052612, y: 22.157894}
+        - {x: 16.052612, y: 21.157894}
+        - {x: 13.052612, y: 38.157894}
+        - {x: 8.052612, y: 44.157894}
+        - {x: -11.947388, y: 44.157894}
+        - {x: -31.947388, y: 24.157894}
+        - {x: -31.947388, y: -43.842106}
+        - {x: 32.052612, y: -43.842106}
+        - {x: 32.052612, y: -9.842106}
+        - {x: 26.052612, y: 18.157894}
+    - name: pingu_dead_9
+      rect:
+        serializedVersion: 2
+        x: 1179
+        y: 18
+        width: 75
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -13.157898, y: 44.157894}
+        - {x: -31.157898, y: 17.157894}
+        - {x: -31.157898, y: -43.842106}
+        - {x: 32.842102, y: -43.842106}
+        - {x: 32.842102, y: 24.157894}
+        - {x: 11.842102, y: 44.157894}
+    - name: pingu_dead_10
+      rect:
+        serializedVersion: 2
+        x: 1307
+        y: 18
+        width: 74
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 17.131592, y: 44.157894}
+        - {x: -9.868408, y: 44.157894}
+        - {x: -18.868408, y: 40.157894}
+        - {x: -25.868408, y: 19.157894}
+        - {x: -30.868408, y: -23.842106}
+        - {x: -30.868408, y: -43.842106}
+        - {x: 32.13159, y: -43.842106}
+        - {x: 32.13159, y: 5.157894}
+        - {x: 31.131592, y: 19.157894}
+    - name: pingu_dead_11
+      rect:
+        serializedVersion: 2
+        x: 1433
+        y: 15
+        width: 79
+        height: 109
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -11.263184, y: 47.13158}
+        - {x: -33.263184, y: 24.13158}
+        - {x: -33.263184, y: -45.86842}
+        - {x: 34.736816, y: -45.86842}
+        - {x: 34.736816, y: 37.13158}
+        - {x: 29.736816, y: 47.13158}
+    - name: pingu_dead_12
+      rect:
+        serializedVersion: 2
+        x: 1562
+        y: 15
+        width: 78
+        height: 109
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 33.86841, y: -43.86842}
+        - {x: 33.86841, y: 4.1315804}
+        - {x: 29.868408, y: 21.13158}
+        - {x: 14.868408, y: 47.13158}
+        - {x: -15.131592, y: 47.13158}
+        - {x: -27.131592, y: 22.13158}
+        - {x: -29.131592, y: 12.13158}
+        - {x: -33.13159, y: -12.86842}
+        - {x: -33.13159, y: -45.86842}
+        - {x: -10.131592, y: -45.86842}
+        - {x: -9.131592, y: -44.86842}
+        - {x: -3.1315918, y: -45.86842}
+        - {x: 32.86841, y: -45.86842}
+    - name: pingu_dead_13
+      rect:
+        serializedVersion: 2
+        x: 1690
+        y: 15
+        width: 77
+        height: 109
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -15.342041, y: 47.13158}
+        - {x: -29.342041, y: 17.13158}
+        - {x: -32.34204, y: 4.1315804}
+        - {x: -32.34204, y: -45.86842}
+        - {x: 32.65796, y: -45.86842}
+        - {x: 32.65796, y: 31.13158}
+        - {x: 15.657959, y: 47.13158}
+    - name: pingu_dead_14
+      rect:
+        serializedVersion: 2
+        x: 1816
+        y: 12
+        width: 82
+        height: 115
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -27.736816, y: 48.605263}
+        - {x: -34.736816, y: 45.605263}
+        - {x: -34.736816, y: -30.394737}
+        - {x: -20.736816, y: -48.394737}
+        - {x: 23.263184, y: -48.394737}
+        - {x: 35.263184, y: -38.394737}
+        - {x: 35.263184, y: 42.605263}
+        - {x: 34.263184, y: 48.605263}
+    - name: pingu_dead_15
+      rect:
+        serializedVersion: 2
+        x: 1944
+        y: 12
+        width: 82
+        height: 115
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -20.947388, y: 48.605263}
+        - {x: -34.947388, y: 31.605263}
+        - {x: -34.947388, y: -40.394737}
+        - {x: -15.947388, y: -48.394737}
+        - {x: 29.052612, y: -48.394737}
+        - {x: 35.052612, y: -43.394737}
+        - {x: 35.052612, y: 39.605263}
+        - {x: 21.052612, y: 48.605263}
+    - name: pingu_dead_16
+      rect:
+        serializedVersion: 2
+        x: 2071
+        y: 12
+        width: 82
+        height: 115
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 15, y: 48.605263}
+        - {x: -35, y: 48.605263}
+        - {x: -35, y: -40.394737}
+        - {x: -25, y: -48.394737}
+        - {x: 23, y: -48.394737}
+        - {x: 35, y: -28.394737}
+        - {x: 35, y: 24.605263}
+        - {x: 32, y: 37.605263}
+    - name: pingu_dead_17
+      rect:
+        serializedVersion: 2
+        x: 2199
+        y: 65
+        width: 41
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -5.2105713, y: 27.236843}
+        - {x: -17.210571, y: 0.23684311}
+        - {x: -17.210571, y: -25.763157}
+        - {x: -4.2105713, y: -25.763157}
+        - {x: 18.789429, y: 18.236843}
+        - {x: 18.789429, y: 27.236843}
+    - name: pingu_dead_18
+      rect:
+        serializedVersion: 2
+        x: 2242
+        y: 65
+        width: 39
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16.5, y: 27.236843}
+        - {x: -16.5, y: 20.236843}
+        - {x: 4.5, y: -25.763157}
+        - {x: 16.5, y: -25.763157}
+        - {x: 16.5, y: 9.236843}
+        - {x: 12.5, y: 26.236843}
+        - {x: 4.5, y: 27.236843}
+    - name: pingu_dead_19
+      rect:
+        serializedVersion: 2
+        x: 2199
+        y: 12
+        width: 41
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -17.210571, y: 22.105263}
+        - {x: -17.210571, y: 4.1052628}
+        - {x: -9.210571, y: -19.894737}
+        - {x: -1.2105713, y: -21.894737}
+        - {x: 18.789429, y: -21.894737}
+        - {x: 18.789429, y: -12.894737}
+        - {x: -4.2105713, y: 22.105263}
+    - name: pingu_dead_20
+      rect:
+        serializedVersion: 2
+        x: 2242
+        y: 12
+        width: 39
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 4.5, y: 22.105263}
+        - {x: 0.5, y: 20.105263}
+        - {x: -16.5, y: -14.894737}
+        - {x: -16.5, y: -21.894737}
+        - {x: 0.5, y: -21.894737}
+        - {x: 3.5, y: -20.894737}
+        - {x: 16.5, y: -0.89473724}
+        - {x: 16.5, y: 22.105263}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -7,6 +7,8 @@ public class Kakerlake : MonoBehaviour {
 	public float minDistance = 1f;
 	float distance;
 	Transform myTransform_;
+	public GameObject fleck;
+
 
 	bool dead = false;
 
@@ -40,5 +42,6 @@ public class Kakerlake : MonoBehaviour {
 
 	public void death(){
 		dead = true;
+		Instantiate (fleck, transform.position, Quaternion.identity);
 	}
 }

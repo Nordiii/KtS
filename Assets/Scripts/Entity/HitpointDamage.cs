@@ -80,6 +80,7 @@ public class HitpointDamage : MonoBehaviour {
     }
 
 	public void destroy(){
+		
 		Destroy (gameObject);
 	}
 

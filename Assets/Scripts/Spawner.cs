@@ -3,7 +3,7 @@ using System.Collections;
 
 public class Spawner : MonoBehaviour {
 	public GameObject[] enemy;
-
+	public GameObject boss;
 	public float spawnMin = 1f; //wann spawnt nächster Gegner
 	public float spawnMax = 3f;
 
@@ -33,6 +33,17 @@ public class Spawner : MonoBehaviour {
 			yield return new WaitForSeconds(2);
 			Instantiate (enemy [Random.Range (0, enemy.Length)], transform.position, Quaternion.identity);
 		}
+		animator_.SetTrigger ("Close");
+	}
+
+	public void releaseBoss(){
+		StartCoroutine(SpawnBoss ());
+	}
+
+	IEnumerator SpawnBoss(){
+		animator_.SetTrigger ("Open");
+			yield return new WaitForSeconds(2);
+			Instantiate (boss, transform.position, Quaternion.identity);
 		animator_.SetTrigger ("Close");
 	}
 }

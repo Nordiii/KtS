@@ -8,6 +8,8 @@ public class GameManager : MonoBehaviour {
 	public float score = 0f;
 	public Spawner[] spawners; 
 	public bool paused = false;
+	public int waves = 3;
+	int countwaves = 0;
 	public int countEnemy;
 	public string levelAfterGameOver;
 
@@ -48,13 +50,21 @@ public class GameManager : MonoBehaviour {
 				spawners [i].release(countEnemy);
 				livingEnemies = countEnemy * spawners.Length;
 			}
+			if (countwaves == waves) {
+				livingEnemies++;
+				spawners [0].releaseBoss ();
+			}
 			countEnemy += 4;
 		}
 	}
 		
 	public void start(){
+		if(waves == countwaves){
+			nextLevel();
+		}
 		UIStartWaves.SetActive (false);
 		start_ = true;
+		countwaves++;
 	}
 
 	void nextLevel(){

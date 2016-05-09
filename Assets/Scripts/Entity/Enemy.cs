@@ -10,7 +10,9 @@ public class Enemy : MonoBehaviour {
 	Animator animator_;
 	Transform myTransform_;
 	AudioSource audiosource_;
+	BoxCollider2D box_;
 
+	public float attack_timer;
 	float tempx;
 	float tempy;
 	float movex;
@@ -31,10 +33,12 @@ public class Enemy : MonoBehaviour {
 		myTransform_ = GetComponent<Transform> ();
 		audiosource_ = GetComponent<AudioSource> ();
 		animator_ = GetComponent<Animator> ();
+		box_ = GetComponent<BoxCollider2D> ();
 	}
 	
 	// Update is called once per frame
 	void Update () {
+		attack_timer += Time.deltaTime;
 		if (dead) {
 			return;
 		}
@@ -46,6 +50,8 @@ public class Enemy : MonoBehaviour {
 		if (minDistance < distance) {
 			transform.position =
 				Vector2.MoveTowards (transform.position, target.position, moveSpeed * Time.deltaTime);
+		} else {
+			slash ();
 		}
 		turnAround ();
 	}
@@ -78,6 +84,8 @@ public class Enemy : MonoBehaviour {
 			left = true;
 			right = false;
 			animator_.SetTrigger ("left");
+			turnKatana ();
+
 		}
 		if ((position.x > 0 && position.x > betrag (position.y)) && !right) {
 			up = false;
@@ -85,6 +93,7 @@ public class Enemy : MonoBehaviour {
 			left = false;
 			right = true;
 			animator_.SetTrigger ("right");
+			turnKatana ();
 		}
 	}
 
@@ -103,8 +112,14 @@ public class Enemy : MonoBehaviour {
 	 
 	public void death(){
 		dead = true;
+		box_.enabled = false;
 	}
 	public void deathSound(){
 		audiosource_.PlayOneShot (deathclip,3f);
+	}
+
+	public virtual void slash(){
+	}
+	public virtual void turnKatana(){
 	}
 }
