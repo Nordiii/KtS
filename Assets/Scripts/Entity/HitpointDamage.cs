@@ -13,8 +13,25 @@ public class HitpointDamage : MonoBehaviour {
     private float attack_timer = 0F;
     private Animator animation_;
 	private SpriteRenderer renderer_;
-
+    private float def = 1;
+    private float def_up_time;
+    private float def_timer;
+    private bool def_increased = false;
 	GameManager gamemanager_;
+    
+    public void setDef(float def_up_time,float def,bool def_increased)
+    {
+        this.def_up_time = def_up_time;
+        this.def = def;
+        this.def_increased = def_increased;
+        def_timer = 0;
+
+        if (def_increased)
+            renderer_.color = new Color(100f, 100f, 0f);
+        else
+            StartCoroutine(changeColorDefault());
+    }
+
 
     public void addHitpoints(int hp)
     {
@@ -29,19 +46,27 @@ public class HitpointDamage : MonoBehaviour {
     {
         animation_ = GetComponent<Animator>(); 
 		gamemanager_ = GameManager.gm;
-		renderer_ = GetComponent<SpriteRenderer> ();
+		renderer_ = GetComponent<SpriteRenderer> (); 
 	}
 	
 	// Update is called once per frame
 	void Update ()
     {
         attack_timer += Time.deltaTime;
-	}
+        def_timer += Time.deltaTime;
+        if(def_increased && def_timer >= def_up_time)
+            setDef(0, 1,false);
+        else if(def_increased)
+            renderer_.color = new Color(100f, 100f, 0f);
+
+
+
+    }
 
     void hitRecived(int damage)
     {
 		if (!death) {
-			hitpoints -= damage;
+			hitpoints -= (int)(damage/def);
 			if (hitpoints <= 0 && !gameObject.CompareTag ("Player")) {
 				death = true;
 				gamemanager_.onedead ();
