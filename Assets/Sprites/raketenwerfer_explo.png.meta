@@ -1,9 +1,19 @@
 fileFormatVersion: 2
 guid: ae2e07944ee47f044bca196634bd7858
-timeCreated: 1462273037
+timeCreated: 1462975788
 licenseType: Free
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: raketenwerfer_explo_0
+    21300002: raketenwerfer_explo_1
+    21300004: raketenwerfer_explo_2
+    21300006: raketenwerfer_explo_3
+    21300008: raketenwerfer_explo_4
+    21300010: raketenwerfer_explo_5
+    21300012: raketenwerfer_explo_6
+    21300014: raketenwerfer_explo_7
+    21300016: raketenwerfer_explo_8
+    21300018: raketenwerfer_explo_9
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -26,30 +36,168 @@ TextureImporter:
   cubemapConvolutionSteps: 7
   cubemapConvolutionExponent: 1.5
   seamlessCubemap: 0
-  textureFormat: -1
+  textureFormat: -3
   maxTextureSize: 2048
   textureSettings:
-    filterMode: -1
-    aniso: -1
+    filterMode: 0
+    aniso: 16
     mipBias: -1
-    wrapMode: -1
-  nPOTScale: 1
+    wrapMode: 1
+  nPOTScale: 0
   lightmap: 0
   rGBM: 0
   compressionQuality: 50
   allowsAlphaSplitting: 0
-  spriteMode: 0
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
-  spritePixelsToUnits: 100
-  alphaIsTransparency: 0
-  textureType: -1
+  spritePixelsToUnits: 128
+  alphaIsTransparency: 1
+  textureType: 8
   buildTargetSettings: []
   spriteSheet:
-    sprites: []
+    sprites:
+    - name: raketenwerfer_explo_0
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 56
+        width: 11
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: raketenwerfer_explo_1
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 56
+        width: 11
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: raketenwerfer_explo_2
+      rect:
+        serializedVersion: 2
+        x: 306
+        y: 56
+        width: 11
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: raketenwerfer_explo_3
+      rect:
+        serializedVersion: 2
+        x: 434
+        y: 56
+        width: 11
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: raketenwerfer_explo_4
+      rect:
+        serializedVersion: 2
+        x: 562
+        y: 56
+        width: 11
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: raketenwerfer_explo_5
+      rect:
+        serializedVersion: 2
+        x: 690
+        y: 56
+        width: 11
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: raketenwerfer_explo_6
+      rect:
+        serializedVersion: 2
+        x: 811
+        y: 56
+        width: 25
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: raketenwerfer_explo_7
+      rect:
+        serializedVersion: 2
+        x: 934
+        y: 67
+        width: 35
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -12.5, y: 19.5}
+        - {x: -17.5, y: 13.5}
+        - {x: -17.5, y: -15.5}
+        - {x: -12.5, y: -19.5}
+        - {x: 15.5, y: -19.5}
+        - {x: 17.5, y: -12.5}
+        - {x: 17.5, y: 16.5}
+        - {x: 13.5, y: 19.5}
+    - name: raketenwerfer_explo_8
+      rect:
+        serializedVersion: 2
+        x: 1058
+        y: 63
+        width: 43
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -13.5, y: 23.5}
+        - {x: -21.5, y: 14.5}
+        - {x: -21.5, y: -14.5}
+        - {x: -14.5, y: -23.5}
+        - {x: 19.5, y: -23.5}
+        - {x: 21.5, y: -21.5}
+        - {x: 21.5, y: 15.5}
+        - {x: 17.5, y: 23.5}
+    - name: raketenwerfer_explo_9
+      rect:
+        serializedVersion: 2
+        x: 1186
+        y: 63
+        width: 43
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -13.5, y: 23.5}
+        - {x: -21.5, y: 14.5}
+        - {x: -21.5, y: -14.5}
+        - {x: -14.5, y: -23.5}
+        - {x: 19.5, y: -23.5}
+        - {x: 21.5, y: -21.5}
+        - {x: 21.5, y: 15.5}
+        - {x: 17.5, y: 23.5}
+      - - {x: -10.5, y: -11.5}
+        - {x: -8.5, y: 13.5}
+        - {x: 10.5, y: 11.5}
+        - {x: 8.5, y: -13.5}
     outline: []
   spritePackingTag: 
   userData: 
