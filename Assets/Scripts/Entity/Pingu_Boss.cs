@@ -4,7 +4,6 @@ using System.Collections;
 public class Pingu_Boss : Enemy {
 	public Animator childAnimator;
 	public Transform trans;
-	public GameObject child;
 	//Animator childAnimator;
 
 	void Awake(){
@@ -25,15 +24,6 @@ public class Pingu_Boss : Enemy {
 			}
 			attack_timer = 0;
 		}
-	}
-
-	public void destroyMe(){
-		Destroy (gameObject);
-	}
-
-	public override void death(){
-		dead = true;
-		box_.enabled = false;
-		Destroy(child);
+		
 	}
 }
