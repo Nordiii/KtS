@@ -10,14 +10,16 @@ public class Enemy : MonoBehaviour {
 	Animator animator_;
 	Transform myTransform_;
 	AudioSource audiosource_;
-	BoxCollider2D box_;
+	[HideInInspector]
+	public BoxCollider2D box_;
 
 	public float attack_timer;
 	float tempx;
 	float tempy;
 	float movex;
 	float movey;
-	bool up = false, down = false, right = false, left = false, dead = false;
+	[HideInInspector]
+	public bool up = false, down = false, right = false, left = false, dead = false;
 
 	Vector3 zombiePosition;
 	Vector3 playerPosition;
@@ -110,10 +112,11 @@ public class Enemy : MonoBehaviour {
 		return zahl;
 	}
 	 
-	public void death(){
+	public virtual void death(){
 		dead = true;
 		box_.enabled = false;
 	}
+
 	public void deathSound(){
 		audiosource_.PlayOneShot (deathclip,3f);
 	}
