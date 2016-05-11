@@ -6,6 +6,9 @@ public class Ammunition : MonoBehaviour {
     public float ammunition_Speed = 100;
     public float ammunition_Damage = 10;
     public float time_Till_Destroy = 5;
+    public bool aoe = false;
+    public float aoe_radius;
+
 
 	// Use this for initialization
 	void Start ()
@@ -43,15 +46,46 @@ public class Ammunition : MonoBehaviour {
 
     void OnCollisionEnter2D(Collision2D collision)
     {
-        if(collision.collider.gameObject.CompareTag("Enemy")|| collision.collider.gameObject.CompareTag("Kakerlake"))
+        if (!aoe)
         {
-            //Fügt die geschwindigkeit hinzu bevor das gameObject zerstört wird (knockback)
-            collision.rigidbody.AddForce(collision.relativeVelocity);
-            collision.gameObject.SendMessage("hitRecived", ammunition_Damage);
-            
-            
+            if (collision.gameObject.CompareTag("Enemy") || collision.gameObject.CompareTag("Kakerlake"))
+            {
+
+
+                //Fügt die geschwindigkeit hinzu bevor das gameObject zerstört wird (knockback)
+                collision.rigidbody.AddForce(collision.relativeVelocity);
+                collision.gameObject.SendMessage("hitRecived", ammunition_Damage);
+
+               
+            }
         }
+        else if(aoe)
+        {
+            gameObject.GetComponent<BoxCollider2D>().isTrigger = true;
+            gameObject.GetComponent<BoxCollider2D>().size = new Vector2(aoe_radius, aoe_radius);
+            if (collision.gameObject.CompareTag("Enemy") || collision.gameObject.CompareTag("Kakerlake"))
+                collision.gameObject.SendMessage("hitRecived", ammunition_Damage);
+
+            return;
+        }
+
         Destroy(gameObject);
     }
 
-}
+    /*
+     * Aoe Waffen schaden
+     * 
+     */
+    public void OnTriggerEnter2D(Collider2D coll)
+    { 
+        
+        if (coll.gameObject.CompareTag("Enemy") || coll.gameObject.CompareTag("Kakerlake"))
+        {
+            coll.gameObject.SendMessage("hitRecived", ammunition_Damage);
+        }
+        gameObject.GetComponent<Rigidbody2D>().velocity = new Vector2(0,0);
+        //Destroy(gameObject);
+    }
+
+
+    }
