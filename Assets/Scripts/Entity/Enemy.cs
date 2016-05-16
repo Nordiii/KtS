@@ -7,8 +7,10 @@ public class Enemy : MonoBehaviour {
 	public float minDistance = 1f;
 	public AudioClip deathclip;
 	float distance;
-	Animator animator_;
-	Transform myTransform_;
+	[HideInInspector]
+	public Animator animator_;
+	[HideInInspector]
+	public Transform myTransform_;
 	AudioSource audiosource_;
 	[HideInInspector]
 	public BoxCollider2D box_;
@@ -21,9 +23,12 @@ public class Enemy : MonoBehaviour {
 	[HideInInspector]
 	public bool up = false, down = false, right = false, left = false, dead = false;
 
-	Vector3 zombiePosition;
-	Vector3 playerPosition;
-	Vector3 position;
+	[HideInInspector]
+	public Vector3 zombiePosition;
+	[HideInInspector]
+	public Vector3 playerPosition;
+	[HideInInspector]
+	public Vector3 position;
 
 	// Use this for initialization
 	void Start () {
@@ -58,7 +63,7 @@ public class Enemy : MonoBehaviour {
 		turnAround ();
 	}
 
-	void turnAround(){
+	public virtual void turnAround(){
 		playerPosition = Camera.main.WorldToScreenPoint(target.position);
 		zombiePosition = Camera.main.WorldToScreenPoint(myTransform_.position);
 
@@ -86,8 +91,6 @@ public class Enemy : MonoBehaviour {
 			left = true;
 			right = false;
 			animator_.SetTrigger ("left");
-			turnKatana ();
-
 		}
 		if ((position.x > 0 && position.x > betrag (position.y)) && !right) {
 			up = false;
@@ -95,17 +98,16 @@ public class Enemy : MonoBehaviour {
 			left = false;
 			right = true;
 			animator_.SetTrigger ("right");
-			turnKatana ();
 		}
 	}
 
-	float betrag(float zahl){
+	public float betrag(float zahl){
 		if (zahl < 0) {
 			return -1 * zahl;
 		} 
 		return zahl;
 	}
-	float nbetrag(float zahl){
+	public float nbetrag(float zahl){
 		if (zahl > 0) {
 			return -1 * zahl;
 		} 
@@ -122,7 +124,5 @@ public class Enemy : MonoBehaviour {
 	}
 
 	public virtual void slash(){
-	}
-	public virtual void turnKatana(){
 	}
 }

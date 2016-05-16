@@ -7,13 +7,65 @@ public class Pingu_Boss : Enemy {
 	public GameObject child;
 	//Animator childAnimator;
 
+	bool wasLeft = false, wasRight = false;
 	void Awake(){
 	//	childAnimator = GetComponentInChildren<Animator>();
 	}
 
-	public override void turnKatana(){
-		trans.localRotation = new Quaternion (trans.localRotation.x * -1.0f,
-			trans.localRotation.y,trans.localRotation.z,trans.localRotation.w *-1.0f);
+	public void turnKatana(){
+		transform.Rotate(new Vector3(0,180,0));
+
+	//	trans.localRotation = new Quaternion (trans.localRotation.x * -1.0f,
+	//		trans.localRotation.y,trans.localRotation.z,trans.localRotation.w *-1.0f);
+	}
+
+	public override void turnAround(){
+		playerPosition = Camera.main.WorldToScreenPoint(target.position);
+		zombiePosition = Camera.main.WorldToScreenPoint(myTransform_.position);
+
+		position = playerPosition-  zombiePosition;
+		//	Debug.Log (playerPosition);
+
+
+		if ((position.y > 0 && position.y > betrag (position.x)) && !up) {
+			up = true;
+			down = false;
+			left = false;
+			right = false;
+			animator_.SetTrigger ("up");
+		}
+		if ((position.y < 0 && position.y < nbetrag (position.x)) && !down) {
+			up = false;
+			down = true;
+			left = false;
+			right = false;
+			animator_.SetTrigger ("down");
+		}
+		if ((position.x < 0 && position.x < nbetrag (position.y)) && !left) {
+			up = false;
+			down = false;
+			left = true;
+			right = false;
+			animator_.SetTrigger ("right");
+
+			if(!wasLeft){
+				turnKatana ();
+				wasLeft = true;
+				wasRight = false;
+			}
+		}
+		if ((position.x > 0 && position.x > betrag (position.y)) && !right) {
+			up = false;
+			down = false;
+			left = false;
+			right = true;
+			animator_.SetTrigger ("right");
+			if(!wasRight){
+				turnKatana ();
+				wasRight = true;
+				wasLeft = false;
+			}
+		}
 	}
 
 	public override void slash(){
