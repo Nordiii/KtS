@@ -14,7 +14,7 @@ public class Enemy : MonoBehaviour {
 	AudioSource audiosource_;
 	[HideInInspector]
 	public BoxCollider2D box_;
-
+	[HideInInspector] 
 	public float attack_timer;
 	float tempx;
 	float tempy;
