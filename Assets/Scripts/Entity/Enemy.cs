@@ -16,6 +16,7 @@ public class Enemy : MonoBehaviour {
 	public BoxCollider2D box_;
 	[HideInInspector] 
 	public float attack_timer;
+	SpriteRenderer spriteRend_;
 	float tempx;
 	float tempy;
 	float movex;
@@ -41,6 +42,7 @@ public class Enemy : MonoBehaviour {
 		audiosource_ = GetComponent<AudioSource> ();
 		animator_ = GetComponent<Animator> ();
 		box_ = GetComponent<BoxCollider2D> ();
+		spriteRend_ = GetComponent<SpriteRenderer>();
 	}
 	
 	// Update is called once per frame
@@ -117,6 +119,8 @@ public class Enemy : MonoBehaviour {
 	public virtual void death(){
 		dead = true;
 		box_.enabled = false;
+		spriteRend_.sortingOrder = -5;
+
 	}
 
 	public void deathSound(){

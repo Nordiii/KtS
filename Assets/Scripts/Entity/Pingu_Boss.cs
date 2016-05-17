@@ -7,7 +7,7 @@ public class Pingu_Boss : Enemy {
 	public GameObject child;
 	//Animator childAnimator;
 
-	bool wasLeft = false, wasRight = false;
+	bool wasLeft = false, wasRight = true;
 	void Awake(){
 	//	childAnimator = GetComponentInChildren<Animator>();
 	}
@@ -47,7 +47,6 @@ public class Pingu_Boss : Enemy {
 			left = true;
 			right = false;
 			animator_.SetTrigger ("right");
-
 			if(!wasLeft){
 				turnKatana ();
 				wasLeft = true;
