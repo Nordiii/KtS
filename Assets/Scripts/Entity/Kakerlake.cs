@@ -7,6 +7,7 @@ public class Kakerlake : MonoBehaviour {
 	public float minDistance = 1f;
 	float distance;
 	Transform myTransform_;
+	SpriteRenderer spriteRend_;
 	public GameObject fleck;
 
 
@@ -20,6 +21,7 @@ public class Kakerlake : MonoBehaviour {
 			}
 		}
 		myTransform_ = GetComponent<Transform> ();
+		spriteRend_ = GetComponent<SpriteRenderer>();
 	}
 
 	// Update is called once per frame
@@ -42,6 +44,7 @@ public class Kakerlake : MonoBehaviour {
 
 	public void death(){
 		dead = true;
+		spriteRend_.sortingOrder = -5;
 		Instantiate (fleck, transform.position, Quaternion.identity);
 	}
 }

@@ -10,6 +10,8 @@ public class Spider : MonoBehaviour {
 	public GameObject fleck;
 	[HideInInspector] 
 	public float jump_timer = 2;
+	SpriteRenderer spriteRend_;
+
 
 	bool dead = false;
 
@@ -21,6 +23,8 @@ public class Spider : MonoBehaviour {
 			}
 		}
 		myTransform_ = GetComponent<Transform> ();
+		spriteRend_ = GetComponent<SpriteRenderer>();
+
 	}
 
 	// Update is called once per frame
@@ -48,6 +52,7 @@ public class Spider : MonoBehaviour {
 
 	public void death(){
 		dead = true;
+		spriteRend_.sortingOrder = -5;
 		Instantiate (fleck, transform.position, Quaternion.identity);
 	}
 

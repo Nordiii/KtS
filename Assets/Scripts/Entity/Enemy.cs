@@ -43,6 +43,7 @@ public class Enemy : MonoBehaviour {
 		animator_ = GetComponent<Animator> ();
 		box_ = GetComponent<BoxCollider2D> ();
 		spriteRend_ = GetComponent<SpriteRenderer>();
+
 	}
 	
 	// Update is called once per frame
