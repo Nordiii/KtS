@@ -11,8 +11,11 @@ public class Ammunition : MonoBehaviour {
     public float aoe_radius;
     public bool enemyWeapon = false;
 
-	// Use this for initialization
-	void Start ()
+    public AudioClip hit_sound;
+    public float hit_sound_volume = 0.5f;
+    public float time_to_wait = 1;
+    // Use this for initialization
+    void Start ()
     {
      
         
@@ -70,6 +73,7 @@ public class Ammunition : MonoBehaviour {
                
                 GetComponent<Animator>().SetTrigger("explode");
 
+                StartCoroutine(playSound());
 
                 return;
             }
@@ -111,5 +115,13 @@ public class Ammunition : MonoBehaviour {
     {
         Destroy(gameObject);
     }
+
+
+    IEnumerator playSound()
+    {
+         yield return new WaitForSeconds(time_to_wait);
+        GameObject.Find("Main Camera").GetComponent<AudioSource>().PlayOneShot(hit_sound, hit_sound_volume);
+    }
+
 
     }
