@@ -35,6 +35,9 @@ public class HitpointDamage : MonoBehaviour {
 
     public void addHitpoints(int hp)
     {
+        if (hitpoints == 10)
+            return;
+
         hitpoints += hp;
         renderer_.color = new Color(0f, 100f, 0f);
         StartCoroutine(changeColorDefault());

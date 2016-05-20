@@ -39,6 +39,10 @@ public class Weapon : MonoBehaviour {
     public AudioClip weapon_sound;
 
     public float weapon_Sound_volume = 0.5F;
+    
+    public AudioClip weapon_reload_sound;
+
+    public float weapon_reload_Sound_volume = 0.5F;
 
     private float current_threshold;
     private float shoot_timer;
@@ -140,6 +144,7 @@ public class Weapon : MonoBehaviour {
         if (weapon_Magazin_Ammunition == 0 && weapon_Reload_Ammunition != 0)
         {
             reload = true;
+            GameObject.Find("Main Camera").GetComponent<AudioSource>().PlayOneShot(weapon_reload_sound, weapon_reload_Sound_volume);
             current_threshold = reload_Time_Second;
             GameObject.Find("UIAmmunition").GetComponent<Text>().text = "Reloading...";
             if(reaload_sprite != null)

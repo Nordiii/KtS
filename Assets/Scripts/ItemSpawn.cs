@@ -13,6 +13,8 @@ public class ItemSpawn : MonoBehaviour
     
     private float timer = 0;
 
+    public AudioClip pickup_sound;
+    public float pickup_sound_volume = 0.5f;
 
 	// Use this for initialization
 	void Start ()
@@ -70,7 +72,7 @@ public class ItemSpawn : MonoBehaviour
         }
 
 
-
+        GameObject.Find("Main Camera").GetComponent<AudioSource>().PlayOneShot(pickup_sound, pickup_sound_volume);
 
         empty = true;
         timer = 0;
