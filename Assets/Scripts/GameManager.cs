@@ -19,6 +19,11 @@ public class GameManager : MonoBehaviour {
 
 	int livingEnemies;
     bool start_ = false;
+    bool ongoing = false;
+    public bool getOngoing()
+    {
+        return ongoing;
+    }
 
 	void Awake(){
 		if (gm == null) {
@@ -44,7 +49,9 @@ public class GameManager : MonoBehaviour {
 				paused = false;
 			}
 		}
-		if (start_) {
+		if (start_)
+        {
+            ongoing = true;
 			start_ = false;
 			for(int i = 0; i < spawners.Length; i++){
 				spawners [i].release(countEnemy);
@@ -64,7 +71,8 @@ public class GameManager : MonoBehaviour {
 		}
 		UIStartWaves.SetActive (false);
 		start_ = true;
-		countwaves++;
+        
+        countwaves++;
 	}
 
 	void nextLevel(){
@@ -73,8 +81,10 @@ public class GameManager : MonoBehaviour {
 
 	public void onedead(){
 		livingEnemies--;
-		if(livingEnemies <= 0){
-			UIStartWaves.SetActive (true);
+		if(livingEnemies <= 0)
+        {
+            UIStartWaves.SetActive (true);
+            ongoing = false;
 		}
 	}
 }

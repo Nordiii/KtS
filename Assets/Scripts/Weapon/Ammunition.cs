@@ -64,6 +64,7 @@ public class Ammunition : MonoBehaviour {
             {
                 gameObject.GetComponent<BoxCollider2D>().isTrigger = true;
                 gameObject.GetComponent<BoxCollider2D>().size = new Vector2(aoe_radius, aoe_radius);
+                GetComponent<BoxCollider2D>().offset = new Vector2(0, 0);
                 if (collision.gameObject.CompareTag("Enemy") || collision.gameObject.CompareTag("Kakerlake"))
                     collision.gameObject.SendMessage("hitRecived", ammunition_Damage);
                
@@ -84,7 +85,7 @@ public class Ammunition : MonoBehaviour {
             }
            
         }
-        Debug.Log("Destroy");
+    
         Destroy(gameObject);
     }
 
@@ -103,10 +104,6 @@ public class Ammunition : MonoBehaviour {
             coll.gameObject.SendMessage("hitRecived", ammunition_Damage);
         }
         
-
-
-        //gameObject.GetComponent<SpriteRenderer>().sortingOrder = -5;
-        //Destroy(gameObject);
     }
 
 

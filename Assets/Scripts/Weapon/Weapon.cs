@@ -103,7 +103,7 @@ public class Weapon : MonoBehaviour {
                
         }
        //Debug.Log(Input.GetMouseButton(0));
-        if (able_to_shoot && Input.GetMouseButton(0))
+        if (able_to_shoot && Input.GetMouseButton(0) && GameManager.gm.getOngoing())
             shot();
 
         
