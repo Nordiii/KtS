@@ -6,6 +6,7 @@ public class Ammunition : MonoBehaviour {
     public float ammunition_Speed = 100;
     public float ammunition_Damage = 10;
     public float time_Till_Destroy = 5;
+
     public bool aoe = false;
     public float aoe_radius;
     public bool enemyWeapon = false;
@@ -44,8 +45,8 @@ public class Ammunition : MonoBehaviour {
 
     void OnCollisionEnter2D(Collision2D collision)
     {
-
-        if(!enemyWeapon)
+        gameObject.GetComponent<Rigidbody2D>().velocity = new Vector2(0, 0);
+        if (!enemyWeapon)
             if (!aoe)
             {
                 if (collision.gameObject.CompareTag("Enemy") || collision.gameObject.CompareTag("Kakerlake"))
@@ -65,6 +66,9 @@ public class Ammunition : MonoBehaviour {
                 gameObject.GetComponent<BoxCollider2D>().size = new Vector2(aoe_radius, aoe_radius);
                 if (collision.gameObject.CompareTag("Enemy") || collision.gameObject.CompareTag("Kakerlake"))
                     collision.gameObject.SendMessage("hitRecived", ammunition_Damage);
+               
+                GetComponent<Animator>().SetTrigger("explode");
+
 
                 return;
             }
@@ -92,16 +96,23 @@ public class Ammunition : MonoBehaviour {
     {
         if (coll.gameObject.CompareTag("weaponspawner"))
             return;
-        
+
 
         if (coll.gameObject.CompareTag("Enemy") || coll.gameObject.CompareTag("Kakerlake"))
         {
             coll.gameObject.SendMessage("hitRecived", ammunition_Damage);
         }
         
-        gameObject.GetComponent<Rigidbody2D>().velocity = new Vector2(0, 0);
+
+
+        //gameObject.GetComponent<SpriteRenderer>().sortingOrder = -5;
         //Destroy(gameObject);
     }
 
+
+    public void aoeFinished()
+    {
+        Destroy(gameObject);
+    }
 
     }
