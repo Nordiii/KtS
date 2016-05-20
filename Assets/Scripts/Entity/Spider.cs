@@ -11,6 +11,7 @@ public class Spider : MonoBehaviour {
 	[HideInInspector] 
 	public float jump_timer = 2;
 	SpriteRenderer spriteRend_;
+	BoxCollider2D box_;
 
 
 	bool dead = false;
@@ -24,7 +25,7 @@ public class Spider : MonoBehaviour {
 		}
 		myTransform_ = GetComponent<Transform> ();
 		spriteRend_ = GetComponent<SpriteRenderer>();
-
+		box_ = GetComponent<BoxCollider2D> ();
 	}
 
 	// Update is called once per frame
@@ -52,6 +53,7 @@ public class Spider : MonoBehaviour {
 
 	public void death(){
 		dead = true;
+		box_.enabled = false;
 		spriteRend_.sortingOrder = -5;
 		Instantiate (fleck, transform.position, Quaternion.identity);
         gameObject.GetComponent<EnemyWeapon>().enabled = false;
