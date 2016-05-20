@@ -67,13 +67,18 @@ public class HitpointDamage : MonoBehaviour {
     {
 		if (!death) {
 			hitpoints -= (int)(damage/def);
-			if (hitpoints <= 0 && !gameObject.CompareTag ("Player")) {
-				death = true;
+			if (hitpoints <= 0 && !gameObject.CompareTag ("Player"))
+            {
+         
+                death = true;
 				gamemanager_.onedead ();
-				animation_.SetTrigger ("death");
+                if(animation_ != null)
+				    animation_.SetTrigger ("death");
 				gameObject.SendMessage ("death");
-			} else if (hitpoints <= 0 && gameObject.CompareTag ("Player")) {
-				gameObject.SendMessage ("death");
+			} else if (hitpoints <= 0 && gameObject.CompareTag ("Player"))
+            {
+                GameObject.Find("UIHitpoints").GetComponent<Text>().text = "0";
+                gameObject.SendMessage ("death");
 			} else if (gameObject.CompareTag ("Player"))
             {
 				renderer_.color = new Color (100f,0f,0f);

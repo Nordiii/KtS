@@ -54,7 +54,9 @@ public class Spider : MonoBehaviour {
 		dead = true;
 		spriteRend_.sortingOrder = -5;
 		Instantiate (fleck, transform.position, Quaternion.identity);
-	}
+        gameObject.GetComponent<EnemyWeapon>().enabled = false;
+
+    }
 
 	IEnumerator resetJump(){
 		yield return new WaitForSeconds (0.8f);
