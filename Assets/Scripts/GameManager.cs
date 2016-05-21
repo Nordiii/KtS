@@ -81,6 +81,7 @@ public class GameManager : MonoBehaviour {
 
 	public void onedead(){
 		livingEnemies--;
+		score++;
 		if(livingEnemies <= 0)
         {
             UIStartWaves.SetActive (true);
