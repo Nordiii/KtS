@@ -9,6 +9,8 @@ public class Kakerlake : MonoBehaviour {
 	Transform myTransform_;
 	SpriteRenderer spriteRend_;
 	public GameObject fleck;
+	[HideInInspector]
+	public Animator animator_;
 
 
 	bool dead = false;
@@ -22,6 +24,8 @@ public class Kakerlake : MonoBehaviour {
 		}
 		myTransform_ = GetComponent<Transform> ();
 		spriteRend_ = GetComponent<SpriteRenderer>();
+		animator_ = GetComponent<Animator> ();
+
 	}
 
 	// Update is called once per frame
