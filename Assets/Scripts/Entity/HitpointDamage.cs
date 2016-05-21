@@ -80,6 +80,7 @@ public class HitpointDamage : MonoBehaviour {
 				gameObject.SendMessage ("death");
 			} else if (hitpoints <= 0 && gameObject.CompareTag ("Player"))
             {
+                death = true;
                 GameObject.Find("UIHitpoints").GetComponent<Text>().text = "0";
                 gameObject.SendMessage ("death");
 			} else if (gameObject.CompareTag ("Player"))
@@ -95,7 +96,7 @@ public class HitpointDamage : MonoBehaviour {
     {
         if (attack_timer >= attack_speed)
         {
-            if ( collision.collider.gameObject.CompareTag("Player"))
+            if (collision.collider.gameObject.CompareTag("Player"))
             {
                 collision.gameObject.SendMessage("hitRecived", damage);
 
@@ -107,12 +108,34 @@ public class HitpointDamage : MonoBehaviour {
 
                 attack_timer = 0;
             }
-            
+
 
         }
     }
 
-	public void destroy(){
+
+    void OnTriggerStay2D(Collider2D collision)
+    {
+        if (attack_timer >= attack_speed)
+        {
+            if (collision.gameObject.CompareTag("Player"))
+            {
+                collision.gameObject.SendMessage("hitRecived", damage);
+
+                attack_timer = 0;
+            }
+            if (collision.gameObject.CompareTag("Kakerlake") && !gameObject.CompareTag("Enemy") && !gameObject.CompareTag("Kakerlake"))
+            {
+                collision.gameObject.SendMessage("hitRecived", damage);
+
+                attack_timer = 0;
+            }
+
+
+        }
+    }
+
+    public void destroy(){
 		
 		Destroy (gameObject);
 	}
