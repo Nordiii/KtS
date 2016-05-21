@@ -2,9 +2,10 @@
 using System.Collections;
 
 public class Controller : MonoBehaviour {
-	public float moveSpeed = 0f;
+	public float moveSpeed = 5f;
 	private float movex = 0f;
 	private float movey = 0f;
+	public GameObject spiderweb;
 
 	Rigidbody2D rigidbody2D;
 	Animator animator_;
@@ -105,6 +106,18 @@ public class Controller : MonoBehaviour {
 	public void destroy(){
 		Camera.main.transform.parent=null; // unchild from player. Keeps same position in world
 		Destroy(gameObject);
+	}
+
+	public void hitBySpider(){
+		spiderweb.SetActive (true);
+		moveSpeed = 2.5f;
+		resetSpider ();
+	}
+
+	IEnumerator resetSpider(){
+		yield return new WaitForSeconds (2f);
+		spiderweb.SetActive (false);
+		moveSpeed = 5f;
 	}
 }	
 

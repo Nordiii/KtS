@@ -5,7 +5,6 @@ public class Pingu_Boss : Enemy {
 	public Animator childAnimator;
 	public Transform trans;
 	public GameObject child;
-	SpriteRenderer spriteRend_;
 
 	//Animator childAnimator;
 
