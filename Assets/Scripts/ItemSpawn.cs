@@ -51,7 +51,9 @@ public class ItemSpawn : MonoBehaviour
         if(coll.tag.Equals("Player")&& current_item.tag.Equals("Weapon") && !empty)
         {
             Vector3 position = coll.transform.GetChild(1).gameObject.transform.position;
-            Destroy(coll.transform.GetChild(1).gameObject);
+
+            
+            Destroy(coll.GetComponentInChildren<Weapon>().gameObject);
             current_item.transform.parent = coll.transform;
             current_item.transform.position = position;
             current_item.GetComponent<Weapon>().enabled = true;
