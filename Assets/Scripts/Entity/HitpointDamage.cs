@@ -94,7 +94,7 @@ public class HitpointDamage : MonoBehaviour {
 
     void OnCollisionEnter2D(Collision2D collision)
     {
-        if (attack_timer >= attack_speed)
+        if (attack_timer >= attack_speed &&!death)
         {
             if (collision.collider.gameObject.CompareTag("Player"))
             {
