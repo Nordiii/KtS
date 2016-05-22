@@ -86,6 +86,7 @@ public class Ammunition : MonoBehaviour {
               
                 collision.rigidbody.AddForce(collision.relativeVelocity);
                 collision.gameObject.SendMessage("hitRecived", ammunition_Damage);
+                collision.gameObject.SendMessage("hitBySpider");
             }
            
         }

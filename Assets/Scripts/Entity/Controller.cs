@@ -111,7 +111,7 @@ public class Controller : MonoBehaviour {
 	public void hitBySpider(){
 		spiderweb.SetActive (true);
 		moveSpeed = 2.5f;
-		resetSpider ();
+        StartCoroutine(resetSpider());
 	}
 
 	IEnumerator resetSpider(){
