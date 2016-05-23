@@ -18,7 +18,10 @@ public class HitpointDamage : MonoBehaviour {
     private float def_timer;
     private bool def_increased = false;
 	GameManager gamemanager_;
+
+	public GameObject healthUI;
     
+
     public void setDef(float def_up_time,float def,bool def_increased)
     {
         this.def_up_time = def_up_time;
@@ -62,9 +65,7 @@ public class HitpointDamage : MonoBehaviour {
         else if(def_increased)
             renderer_.color = new Color(100f, 100f, 0f);
 
-
-
-    }
+	}
 
     void hitRecived(int damage)
     {
@@ -80,13 +81,13 @@ public class HitpointDamage : MonoBehaviour {
 			} else if (hitpoints <= 0 && gameObject.CompareTag ("Player"))
             {
                 death = true;
-                GameObject.Find("UIHitpoints").GetComponent<Text>().text = "0";
                 gameObject.SendMessage ("death");
+				healthUI.SendMessage ("setHealthbar",hitpoints);
 			} else if (gameObject.CompareTag ("Player"))
             {
 				renderer_.color = new Color (100f,0f,0f);
 				StartCoroutine (changeColorDefault ());
-                GameObject.Find("UIHitpoints").GetComponent<Text>().text = ""+hitpoints ;
+				healthUI.SendMessage ("setHealthbar",hitpoints);
 			}
 		}
     }
@@ -143,5 +144,5 @@ public class HitpointDamage : MonoBehaviour {
 		yield return new WaitForSeconds (0.5f);
 		renderer_.color = new Color(1,1,1);
 	}
-
+		
 }
