@@ -1,13 +1,15 @@
 ﻿using UnityEngine;
 using System.Collections;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour {
 
 	public static GameManager gm;
-	public float score = 0f;
+	public float score = 0;
 	public Spawner[] spawners; 
 	public bool paused = false;
+
 	public int waves = 3;
 	int countwaves = 0;
 	public int countEnemy;
@@ -15,6 +17,7 @@ public class GameManager : MonoBehaviour {
 
 	public GameObject UIGamePaused;	
 	public GameObject UIStartWaves;
+	public Text UIGameHighscore;	
     public GameObject UIAmmunitonCounter;
 
 	int livingEnemies;
@@ -38,6 +41,9 @@ public class GameManager : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+		float temphighscore = PlayerPrefs.GetFloat ("scorePref");
+		UIGameHighscore.text = temphighscore.ToString ("F0");
+
 		if (Input.GetKeyDown (KeyCode.Escape)) {
 			if (Time.timeScale > 0f) {
 				UIGamePaused.SetActive (true);
@@ -51,6 +57,7 @@ public class GameManager : MonoBehaviour {
 		}
 		if (start_)
         {
+
             ongoing = true;
 			start_ = false;
 			for(int i = 0; i < spawners.Length; i++){
