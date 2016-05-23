@@ -50,9 +50,9 @@ public class ItemSpawn : MonoBehaviour
             return;
         if(coll.tag.Equals("Player")&& current_item.tag.Equals("Weapon") && !empty)
         {
-            Vector3 position = coll.transform.GetChild(1).gameObject.transform.position;
+            Vector3 position = coll.GetComponentInChildren<Weapon>().gameObject.transform.position;
 
-            
+            Debug.Log("TEST");
             Destroy(coll.GetComponentInChildren<Weapon>().gameObject);
             current_item.transform.parent = coll.transform;
             current_item.transform.position = position;
