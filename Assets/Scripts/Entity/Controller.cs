@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.UI;
 
 public class Controller : MonoBehaviour {
 	public float moveSpeed = 5f;
@@ -97,8 +98,11 @@ public class Controller : MonoBehaviour {
 	}
 
 	public void death(){
-		animator_.SetTrigger("death");
-		ongoing = false;
+        var wake = GameObject.Find("Aufwachen").GetComponent<Image>();
+        wake.enabled = true;
+        GameObject.Find("Aufwachen").GetComponent<Animation>().Play("Aufwachen");
+        animator_.SetTrigger("death");
+        ongoing = false;
 		idle = false;
 		audiosource_.Play();
 	}

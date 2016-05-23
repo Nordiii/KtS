@@ -16,9 +16,12 @@ public class MainMenu : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+
         exitMenu.enabled = false;
         creditScreen.enabled = false;
         score.text = scoreInt.ToString();
+        SetHighscore(PlayerPrefs.GetFloat("scorePref"));
+        PlayerPrefs.SetFloat("scorePref", 0);
     }
 	
 	// Update is called once per frame
@@ -71,13 +74,14 @@ public class MainMenu : MonoBehaviour {
     }
 
     //Setzt einen int Wert als neuen Highscore
-    public void SetHighscore(int x)
+    public void SetHighscore(float x)
     {
-        if(x > scoreInt)
+        if(x > PlayerPrefs.GetFloat("Highscore"))
         {
-            scoreInt = x;
+            PlayerPrefs.SetFloat("Highscore", x);
+            
         }
-        score.text = scoreInt.ToString();
+        score.text = PlayerPrefs.GetFloat("Highscore").ToString();
     }
         
 }

@@ -72,7 +72,6 @@ public class HitpointDamage : MonoBehaviour {
 			hitpoints -= (int)(damage/def);
 			if (hitpoints <= 0 && !gameObject.CompareTag ("Player"))
             {
-         
                 death = true;
 				gamemanager_.onedead ();
                 if(animation_ != null)
