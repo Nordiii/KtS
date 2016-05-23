@@ -44,7 +44,7 @@ public class HitpointDamage : MonoBehaviour {
         hitpoints += hp;
         renderer_.color = new Color(0f, 100f, 0f);
         StartCoroutine(changeColorDefault());
-        GameObject.Find("UIHitpoints").GetComponent<Text>().text = "" + hitpoints;
+        healthUI.SendMessage("setHealthbar", hitpoints);
     }
 
 	// Use this for initialization
@@ -121,7 +121,7 @@ public class HitpointDamage : MonoBehaviour {
             if (collision.gameObject.CompareTag("Player"))
             {
                 collision.gameObject.SendMessage("hitRecived", damage);
-
+          
                 attack_timer = 0;
             }
             if (collision.gameObject.CompareTag("Kakerlake") && !gameObject.CompareTag("Enemy") && !gameObject.CompareTag("Kakerlake"))
