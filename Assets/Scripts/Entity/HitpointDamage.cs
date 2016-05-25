@@ -42,6 +42,8 @@ public class HitpointDamage : MonoBehaviour {
             return;
 
         hitpoints += hp;
+        if (hitpoints > 10) hitpoints = 10;
+
         renderer_.color = new Color(0f, 100f, 0f);
         StartCoroutine(changeColorDefault());
         healthUI.SendMessage("setHealthbar", hitpoints);
